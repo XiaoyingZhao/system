@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="http://bsyimg3.cdn.krcom.cn/static20131031/miaopai20140729/h5_all/h5-static/css/reset.css">
+	<link rel="stylesheet" href="static/css/nav.css">
+</head>
+<body>
+
+
+	<h1>UXC规范管理后台</h1>
+	<div class="head-icon"><img src="static/img/default-head.png" alt=""></div>
+	<div class="nick-wrap">
+		<img src="static/img/admin-icon.png" alt="">
+		<b><%=user.name%></b>
+	</div>
+	<div class="menu">
+		<!-- <div class="menu-list">
+			<a href=""><b>组员管理</b></a>
+		</div> -->
+		
+		<% 
+			for(var i=0;i<data.length;i++){ 
+				
+				if(data[i].upid == 0){
+		%>
+			
+			<div class="menu-list <%= i==0?'on':''%>">
+				<a href=<%= data[i].mark == "miaopaiapp"? "javascript:;" : "/guifan/admin/"+data[i].mark%> target="mainFrame">
+					<b><%=data[i].name %></b>
+				</a>
+		
+			</div>
+			<% for(var j=0;j<data.length;j++){
+				if(data[j].upid === data[i].id){%>	
+				<div class="menu-list">	
+					<a href="/guifan/admin/<%=data[i].mark%>/<%=data[j].mark%>" target="mainFrame">
+						<b class="small-nav" ><%=data[j].name %></b>
+					</a>
+				</div>
+			<% } } %> 
+		<% }} %>
+	</div>
+	
+	
+	<script src="static/js/jquery-1.10.2.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		$(".menu-list").click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+		})
+	})
+		
+	</script>
+</body>
+</html>

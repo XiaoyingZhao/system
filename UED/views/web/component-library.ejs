@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>秒拍客户端管理</title>
+	<link rel="stylesheet" href="../static/css/reset.css">
+	<link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>秒拍客户端管理</h1>
+		
+		<div class="con-cards clearfix">
+			<h2>组件<span class='add-card'><img src="../static/img/add-icon.png" alt=""></span></h2>
+			
+			<!-- 添加 -->
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="miaopaiapp_list">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template none">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="upload" href="javascript:;"><input type="file" name='img1' onchange='component_library_mod_img.innerHTML=this.value'>上传</a>
+							<b id="component_library_mod_img">支持sketch文件</b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<span class="cancel">取消</span>
+						<input type="submit" class="sure" value="添加">
+					</div>
+				</div>
+			</form>
+			
+			<!-- 修改 -->
+			<% 
+				if(typeof data.component_library_mod_data != 'undefined'){ 
+					var component_library_mod_data = data.component_library_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="miaopaiapp_list">
+				<input type="hidden" name="mod_id" value="<%=component_library_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=component_library_mod_data.title%>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='component_library_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="component_library_mod_img1"><%=component_library_mod_data.img1 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/component-library'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示 -->
+			<% 
+				var component_library_data = data.component_library_data;
+				if(component_library_data.length > 0){ 
+				    for(var i = 0,len=component_library_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=component_library_data[i].title %></b>
+					</div>
+				
+					<div class="gap"></div>
+					<div class="line-box">
+						<!-- <a class="reupload" href="javascript:;">重传</a> -->
+						<label class="txt"></label>
+						<b>支持pdf格式，RGB模式，大小<20M</b>
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=miaopaiapp_list&act=mod&id=<%=component_library_data[i].id %>"></a>
+					<a class="del" href="?page=miaopaiapp_list&act=del&id=<%=component_library_data[i].id %>"></a>
+				</div>
+			</div>
+			<% }} %>	
+		</div>
+		
+		
+		
+		<div class="del-dialog">
+			<div class="con">
+				<span class="close"><img src="../static/img/close-icon.png" alt=""></span>
+				<p><img src="../static/img/warn-icon.png" alt=""><b>确定删除此模块？</b></p>
+				<div class="d-btn">确定</div>
+			</div>
+		</div>
+	</div>
+		<script src="../static/js/jquery-1.10.2.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		// 如果修改页面保持定位在当前位置
+		window.sessionStorage.component_library_scrollTop?document.documentElement.scrollTop = window.sessionStorage.component_library_scrollTop : "";
+		
+		$(".add-card").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			
+			template.show();
+			
+			
+		});
+		$(".cancel").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			
+			template.hide();
+			
+			
+		});
+		
+		$(document).delegate(".del","click",function(e){
+			e = e || window.event; 
+			e.preventDefault();
+			del_link = $(this).attr('href');
+			$(".del-dialog").show();
+			return false
+		});
+		$(".del-dialog .d-btn").click(function () {
+			$(".del-dialog").hide();
+			window.location.href=del_link;
+			del_link = '';
+		});
+		$(".close").click(function(){
+			$(this).closest(".del-dialog").hide();
+		});
+		
+		$(document).delegate(".mod,.cancel,.sure","click",function(e){
+			var _top = document.documentElement.scrollTop || document.body.scrollTop;
+			window.sessionStorage.setItem("miaopai_scrollTop", _top);
+		});
+		
+	});
+		
+	</script>
+</body>
+</html>

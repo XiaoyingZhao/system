@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>切图命名规范</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap" style="margin-bottom: 160px;">
+			<h1 class="cut_title">
+				秒拍APP切图命名规范
+			</h1>
+			<table width="100%;" class="table table_1">
+				<caption>切图命名以模块为前缀，如：模块_类别_功能_状态</caption>
+				<tr>
+					<td>IOS</td>
+					<td>ios切图，输出（@2x  png，@3x  png）</td>
+				</tr>
+				<tr>
+					<td>Android</td>
+					<td>安卓切图，输出（xhdpi @2x png，xxhdpi @3x png）</td>
+				</tr>
+				<tr>
+					<td>模块</td>
+					<td>登录页面（login）公共（common）首页（home）热榜（hot）发现（discovery）我的（me）拍摄（capture）悬赏（reward）话题（topic）播放器（player）</td>
+				</tr>
+				<tr>
+					<td>类别</td>
+					<td>导航栏（nav）菜单栏（tab）按钮（btn）图标（icon）背景图片（bg）默认图片（def）单选框（rb）标签（lable）</td>
+				</tr>
+				<tr>
+					<td>状态</td>
+					<td>按下（以android pressed为准，简称p，ios为 highlight，简称hl）不可点（disabled）</td>
+				</tr>
+			</table>
+			<table width='100%;' class="table table_2">
+				<caption style="border-top:none;">命名示例</caption>
+				<tr class="tr_line1">
+					<td rowspan="2">启动 default</td>
+					<td>default</td>
+					<td>启动图片</td>
+				</tr>
+				<tr>
+					<td>default_logo</td>
+					<td>启动logo</td>
+				</tr>
+				<tr class="tr_line1">
+					<td rowspan="6">登录 login</td>
+					<td>login_bg</td>
+					<td>登录背景图</td>
+				</tr>
+				<tr>
+					<td>login_logo</td>
+					<td>登录logo</td>
+				</tr>
+				<tr>
+					<td>login_input_n</td>
+					<td>输入框</td>
+				</tr>
+				<tr>
+					<td>login_input_s</td>
+					<td>输入框选中状态</td>
+				</tr>
+				<tr>
+					<td>login_btn_n</td>
+					<td>登录按钮</td>
+				</tr>
+				<tr>
+					<td>login_btn_p</td>
+					<td>登录按钮按下状态</td>
+				</tr>
+				<tr class="tr_line1">
+					<td rowspan="2">注册 register</td>
+					<td>login_register_rb_n</td>
+					<td>单选框按钮</td>
+				</tr>
+				<tr>
+					<td>login_register_rb_s</td>
+					<td>单选框按钮选中状态</td>
+				</tr>
+				<tr class="tr_line1">
+					<td rowspan="6">登录 login</td>
+					<td>login_bg</td>
+					<td>登录背景图</td>
+				</tr>
+				<tr>
+					<td>login_logo</td>
+					<td>登录logo</td>
+				</tr>
+				<tr>
+					<td>login_input_n</td>
+					<td>输入框</td>
+				</tr>
+				<tr>
+					<td>login_input_s</td>
+					<td>输入框选中状态</td>
+				</tr>
+				<tr>
+					<td>login_btn_n</td>
+					<td>登录按钮</td>
+				</tr>
+				<tr>
+					<td>login_btn_p</td>
+					<td>登录按钮按下状态</td>
+				</tr>
+				<tr class="tr_line1">
+					<td rowspan="2">注册 register</td>
+					<td>login_register_rb_n</td>
+					<td>单选框按钮</td>
+				</tr>
+				<tr>
+					<td>login_register_rb_s</td>
+					<td>单选框按钮选中状态</td>
+				</tr>
+				<tr class="tr_line1">
+					<td rowspan="11">导航栏 nav</td>
+					<td>common_nav_btn_back_n</td>
+					<td>返回按钮</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_back_p</td>
+					<td>返回按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_close_n</td>
+					<td>关闭按钮</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_close_p</td>
+					<td>关闭按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_share_n</td>
+					<td>分享按钮</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_share_p</td>
+					<td>分享按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_done_n</td>
+					<td>完成按钮</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_done_p</td>
+					<td>完成按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_more_n</td>
+					<td>更多按钮</td>
+				</tr>
+				<tr>
+					<td>common_nav_btn_more_p</td>
+					<td>更多按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_nav_icon_search</td>
+					<td>搜索图标</td>
+				</tr>
+				<tr class="tr_line1">
+					<td rowspan="8">菜单 tab</td>
+					<td>common_tab_home_n</td>
+					<td>首页按钮</td>
+				</tr>
+				<tr>
+					<td>common_tab_home_p</td>
+					<td>首页按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_tab_hot_n</td>
+					<td>热榜按钮</td>
+				</tr>
+				<tr>
+					<td>common_tab_hot_p</td>
+					<td>热榜按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_tab_discovery_n</td>
+					<td>发现按钮</td>
+				</tr>
+				<tr>
+					<td>common_tab_discovery_p</td>
+					<td>发现按钮按下状态</td>
+				</tr>
+				<tr>
+					<td>common_tab_me_n</td>
+					<td>我的按钮</td>
+				</tr>
+				<tr>
+					<td>common_tab_me_p</td>
+					<td>我的按钮按下状态</td>
+				</tr>
+				<tr class="tr_line1">
+					<td rowspan="2">话题 topic</td>
+					<td>topic/reward_btn_back_n</td>
+					<td>话题/悬赏返回按钮</td>
+				</tr>
+				<tr>
+					<td>topic/reward_btn_back_p</td>
+					<td>话题/悬赏返回按钮按下状态（共用/共用）</td>
+				</tr>
+				<tr class="tr_line1">
+					<td>广告 banner</td>
+					<td>home_AD_def</td>
+					<td>首页广告默认图</td>
+				</tr>
+			</table>
+			<table class="table_3" width='100%' style="table-layout: fixed;">
+				<caption style="border-top:none;">常用词汇</caption>
+				<thead>
+					<tr>
+						<td>全称</td>
+						<td>简写</td>
+						<td>中文</td>
+						<td class="black_td"></td>
+						<td>全称</td>
+						<td>简写</td>
+						<td>中文</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>selected</td>
+						<td>s</td>
+						<td>选中</td>
+						<td></td>
+						<td>disabled</td>
+						<td>d</td>
+						<td>不可点</td>
+					</tr>
+					<tr>
+						<td>pressed（highlighted）</td>
+						<td>p（hl）</td>
+						<td>按下</td>
+						<td></td>
+						<td>normal</td>
+						<td>n</td>
+						<td>一般</td>
+					</tr>
+					<tr>
+						<td>login-default</td>
+						<td></td>
+						<td>登录页面</td>
+						<td></td>
+						<td>common</td>
+						<td></td>
+						<td>公共</td>
+					</tr>
+					<tr>
+						<td>message</td>
+						<td></td>
+						<td>消息</td>
+						<td></td>
+						<td>discovery</td>
+						<td></td>
+						<td>发现</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<ul class="main3_bottom">
+			<li class="click_last"> 
+				<div>
+					<i class="fa fa-arrow-left"></i>
+				    <span class="main3_last">上一项</span>
+				</div>
+				<span class="main3_last_name">布局</span>
+			</li>
+			<li class="click_event"> 
+				<span class="main3_next_name">组件库</span>
+				<div>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			$(function(){
+			 $('.click_event').click(function(){
+				window.parent.frames.mainFrame.location.href='main_4_UIKIT.html';
+				$.cookie('page_client',9);
+				window.parent.frames.leftFrame.location.reload();
+			  })
+			 $('.click_last').click(function(){
+			 	window.parent.frames.mainFrame.location.href='main_4_layout.html';
+				$.cookie('page_client',7);
+				window.parent.frames.leftFrame.location.reload();
+			 })
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<h1>UXC标识管理</h1>
+		
+		
+		<div class="con-cards clearfix">
+			<h2>品牌标识</h2>
+			
+			<!-- 修改 -->
+			<% 
+				if(typeof data.menu_list_mod_data != 'undefined'){ 
+					var menu_list_mod_data = data.menu_list_mod_data;
+			%>
+				<form action="?" method='post' enctype="multipart/form-data">
+					<input type="hidden" name="page_id" value="menu_list">
+					<input type="hidden" name="mod_id" value="<%=menu_list_mod_data.id%>">
+					<div class="card-wrapper clearfix template menu-mod-template">
+						<div class="card">
+							
+							<div class="line-box">
+								<% if(!!menu_list_mod_data.logo){ %>
+									<a class="reupload" href="javascript:;"><input type="file" name="logo" onchange='mod_logo.innerHTML=this.value'>重传</a>
+									<b id='mod_logo'><%=menu_list_mod_data.logo %></b>
+								<%}else{%>
+									<a class="upload" href="javascript:;"><input type="file" name="logo" onchange='mod_logo.innerHTML=this.value'>上传</a>
+									<b id='mod_logo'>支持jpg/png格式，RGB模式，长200px，宽200px，大小<1M。</b>
+								<%}%>
+									
+								
+							</div>
+							
+						</div>
+						
+						<div class="btns">
+							<a class="cancel" href='/guifan/admin/ued'>取消</a>
+							<input type="submit" class="sure" value="修改">
+						</div>
+					</div>
+				</form>
+			<%}%>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var menudata = data.menu_data 
+				if(menudata.length > 0){
+					for(var i=0,len=menudata.length;i<len;i++){
+						
+			%>
+				
+			
+				<div class="card-wrapper clearfix">
+					<div class="card">
+						<div class="line-box">
+							<b>支持jpg/png格式，RGB模式，长200px，宽200px，大小<1M。</b>
+						</div>
+						
+						<div class="preview">
+							<img src="<%=data.menu_data[i].logo %>" alt="">
+						</div>
+					</div>
+					<div class="tools">
+						<a class="mod" href="?page=menu_list&act=mod&id=<%=data.menu_data[i].id %>"></a>
+					</div>
+				</div>	
+			
+			<%}}%>
+			
+		</div>
+		
+		
+		<div class="con-cards brand-con">
+			<h2>品牌组合标识<span class='add-card'><img src="static/img/add-icon.png" alt=""></span></h2>
+			
+			<!-- 添加 -->
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="brand_list">
+				<div class="card-wrapper clearfix template brand-add-template none">
+					<div class="card">
+						<div class="line-box">
+							<label>预览图</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic1" onchange='add_pic1.innerHTML=this.value'>上传</a>
+							<b id='add_pic1'>png格式，宽<300px，高<50px，RGB模式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic2" onchange='add_pic2.innerHTML=this.value'>上传</a>
+							<b id="add_pic2">支持文件夹上传，内含png格式标识，400x400px，RGB模式，包括常规、文字反白、整体反白、整体反黑4种样式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic3" onchange='add_pic3.innerHTML=this.value'>上传</a>
+							<b id="add_pic3">支持文件夹上传，eps格式下CMYK模式，psd格式下RGB模式，包括常规、文字反白、整体反白、整体反黑4种样式</b>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<span class="cancel">取消</span>
+						<input type="submit" class="sure" value="添加">
+					</div>
+				</div>
+			</form>
+				
+			<!-- 修改 -->
+			<% 
+				if(typeof data.brand_list_mod_data != 'undefined'){ 
+					var brand_list_mod_data = data.brand_list_mod_data;
+			%>
+			
+				<form action="?" method='post' enctype="multipart/form-data">
+					<input type="hidden" name="page_id" value="brand_list">
+					<input type="hidden" name="mod_id" value="<%=brand_list_mod_data.id%>">
+					<div class="card-wrapper clearfix template brand-mod-template">
+						<div class="card">
+							<div class="line-box">
+								<label>预览图</label>
+								<a class="reupload" href="javascript:;"><input type="file" name='pic1' onchange='mod_pic1.innerHTML=this.value'>重传</a>
+								<b id='mod_pic1' ><%=brand_list_mod_data.pic1 %></b>
+							</div>
+							<div class="gap"></div>
+							<div class="line-box">
+								<label>图片</label>
+								<a class="reupload" href="javascript:;"><input type="file" name='pic2' onchange='mod_pic2.innerHTML=this.value'>重传</a>
+								<b id="mod_pic2"><%=brand_list_mod_data.pic2 %></b>
+							</div>
+							<div class="gap"></div>
+							<div class="line-box">
+								<label>源文件</label>
+								<a class="reupload" href="javascript:;"><input type="file" name='pic3' onchange='mod_pic3.innerHTML=this.value'>重传</a>
+								<b id="mod_pic3"><%=brand_list_mod_data.pic3 %></b>
+							</div>
+						
+						</div>
+						
+						<div class="btns">
+							<a class="cancel" href='/guifan/admin/ued'>取消</a>
+							<input type="submit" class="sure" value="修改">
+						</div>
+					</div>
+				</form>
+				
+			<% } %>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var branddata = data.brand_data;
+				if(branddata.length > 0){ 
+				    for(var i = 0,len=branddata.length; i<len; i++){
+			%>
+				<div class="card-wrapper clearfix">
+					<div class="card">
+						<div class="con">
+							<div class="line-box">
+								<label>预览图</label>
+								<b>png格式，宽<300px，高<50px，RGB模式</b>
+							</div>
+							<div class="gap"></div>
+							<div class="line-box">
+								<label>图片</label>
+								<b>支持文件夹上传，内含png格式标识，400x400px，RGB模式，包括常规、文字反白、整体反白、整体反黑4种样式</b>
+							</div>
+							<div class="gap"></div>
+							<div class="line-box">
+								<label>源文件</label>
+								<b>支持文件夹上传，eps格式下CMYK模式，psd格式下RGB模式，包括常规、文字反白、整体反白、整体反黑4种样式</b>
+							</div>
+						</div>
+						<div class="preview">
+							<img src="<%=branddata[i].pic1 %>" alt="">
+						</div>
+					
+					</div>
+					
+					<div class="tools">
+						<a class="mod" href="?page=brand_list&act=mod&id=<%=branddata[i].id%>"></a>
+						<a class="del" href="?page=brand_list&act=del&id=<%=branddata[i].id%>"></a>
+					</div>
+				</div>
+			<% }} %>
+		</div>
+		
+		
+		<div class="del-dialog">
+			<div class="con">
+				<span class="close"><img src="static/img/close-icon.png" alt=""></span>
+				<p><img src="static/img/warn-icon.png" alt=""><b>确定删除此模块？</b></p>
+				<div class="d-btn">确定</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script src="static/js/jquery-1.10.2.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		// 如果修改页面保持定位在当前位置
+		window.sessionStorage.ued_scrollTop?document.documentElement.scrollTop = window.sessionStorage.ued_scrollTop : "";
+		var del_link;
+		
+		$(".add-card").click(function(){
+			var template = $(".brand-con .brand-add-template");
+			
+			template.show();
+			
+			
+		});
+		$(".cancel").click(function(){
+			var template = $(".brand-con .brand-add-template");
+			
+			template.hide();
+			
+			
+		});
+		$(".close").click(function(){
+			$(this).closest(".del-dialog").hide();
+		});
+		
+		$(document).delegate(".del","click",function(e){
+			e = e || window.event; 
+			e.preventDefault();
+			del_link = $(this).attr('href');
+			$(".del-dialog").show();
+			return false
+		});
+		$(".del-dialog .d-btn").click(function () {
+			$(".del-dialog").hide();
+			window.location.href=del_link;
+			del_link = '';
+		});
+		
+		$(document).delegate(".mod,.cancel,.sure","click",function(e){
+			var _top = document.documentElement.scrollTop || document.body.scrollTop;
+			window.sessionStorage.setItem("ued_scrollTop", _top);
+		});
+	});
+		
+	</script>
+</body>
+</html>

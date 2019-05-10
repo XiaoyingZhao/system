@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	</head>
+	<body style="background-color: #00A6F5;">
+		<header>
+				<a href='contact.html' class="contact">
+					<img src="../img/contact.png"  />
+					<span>联系我们</span>
+				</a>
+				<a href='problem.html' class="problem">
+					<img src="../img/problem.png"  />
+					<span>常见问题</span>
+				</a>
+		</header>
+		<div class="login_box">
+				<img src="../img/login_logo.png" class="login_logo" />
+				<form>
+					<div class="mail_wrap">
+						<img src="../img/mail.png"  />
+						<input type="mail" class="mail_ipt" placeholder="姓名全拼" value=""/>
+					</div>
+					<div class='pass_wrap'>
+						<img src="../img/password.png" />
+						<input type='password' class="pass_ipt" placeholder="密码" value="" />
+						<span class="pass_error"></span>
+					</div>
+				</form>
+				<p class="login_authority">登录权限只对UXC部门开放</p>
+				<button class='login_submit'>登录</button> 
+	    </div>
+	    <script>
+	    	$(function(){
+	    		$('.login_submit').click(function(){
+	    	   	var mail_ipt=$('.mail_ipt').val();
+	    	    var pass_ipt=$('.pass_ipt').val();
+	    	   	 $.ajax({
+		    	   	type:"get",
+		    	   	dataType:'jsonp',
+		    	   	url:"http://uxc.yixia.com/guifan/api/admin_login?username="+mail_ipt+"&password="+pass_ipt,
+		    	   	success:function(data){
+		    	   		console.log(data);
+                    if(data.status!=200){
+                    	     var error_message=data.message;
+                    	     $('.pass_error').show().html(error_message);
+                    	     $('input').focus(function(){
+                    	     	$('.pass_error').hide();
+                    	     })
+                    }else if(data.status==200){
+                    	    var date = new Date();
+                        date.setTime(date.getTime()+24*60*60*1000);
+                    	    var username=data.username;
+                    	    var grade=data.grade;
+                    	    $.cookie('uxc_username',username,{expires:date});
+                    	    if(grade==0){
+                    	    	    $.cookie('grade',grade);
+                    	    	    window.location.href='../index.html';
+                    	    }else if(grade==10){
+                    	    	    var reg=/admin/gi;
+                    	    	    var referrer=document.referrer;
+                    	    	    if(reg.test(referrer)){
+                    	    	    	    window.location.href=referrer;
+                    	    	    }else{
+                    	    	    	    window.location.href='../index.html';
+                    	    	    }
+                    	    }
+                    }	    	   		
+		    	   	}
+		    	   });
+	    	   })
+	    	})
+	    	  
+	    </script>
+	</body>
+</html>

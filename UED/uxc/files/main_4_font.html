@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>标准字</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap" style="margin-bottom: 160px;">
+			<div class='font_type'>
+				<span>中文字体：PingFang SC Light/Regular/Medium</span>
+				<span>英文字体：Helvetica Light/Regular/Medium</span>
+			</div>
+			<section id='font_import'>
+				<div class="main1_section1_title">
+					<h1>重要</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="font_list">
+		        	    <li><span class="font_1">示例文字</span><span class="font_2">Sample text</span><span class="font_3">18</span><span class="font_4">用于少数重要标题，如导航栏标题</span></li>
+		        </ul>
+			</section>
+			<section id='font_common'>
+				<div class="main1_section1_title">
+					<h1>一般</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="font_list">
+		        	    <li><span class="font_1">示例文字</span><span class="font_2">Sample text</span><span class="font_3">18</span><span class="font_4">用于少数重要标题，如导航栏标题</span></li>
+		            <li><span class="font_1">示例文字</span><span class="font_2">Sample text</span><span class="font_3">18</span><span class="font_4">用于少数重要标题，如导航栏标题</span></li>
+		        </ul>
+			</section>
+			<section id='font_weak'>
+				<div class="main1_section1_title">
+					<h1>软弱</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="font_list">
+		        	    <li><span class="font_1">示例文字</span><span class="font_2">Sample text</span><span class="font_3">18</span><span class="font_4">用于少数重要标题，如导航栏标题</span></li>
+		        </ul>
+			</section>
+			<section id='font_special'>
+				<div class="main1_section1_title">
+					<h1>特殊</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="font_list">
+		        	    <li><span class="font_1">示例文字</span><span class="font_2">Sample text</span><span class="font_3">18</span><span class="font_4">用于少数重要标题，如导航栏标题</span></li>
+		        </ul>
+			</section>
+		</div>
+		<ul class="main3_bottom">
+			<li class="click_last"> 
+				<div>
+					<i class="fa fa-arrow-left"></i>
+				    <span class="main3_last">上一项</span>
+				</div>
+				<span class="main3_last_name">标准色</span>
+			</li>
+			<li class="click_event"> 
+				<span class="main3_next_name">图标</span>
+				<div>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			$(function(){
+			 $('.click_event').click(function(){
+				window.parent.frames.mainFrame.location.href='main_4_icon.html';
+				$.cookie('page_client',3);
+				window.parent.frames.leftFrame.location.reload();
+			  })
+			 $('.click_last').click(function(){
+			 	window.parent.frames.mainFrame.location.href='main_4_color.html';
+				$.cookie('page_client',1);
+				window.parent.frames.leftFrame.location.reload();
+			 })
+			})
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一下品牌</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="../js/angular.min.js" ></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body ng-app='main1-app' ng-controller='main1-controller'>
+		<div class="wrap">
+			<section id='main1_section_1'>
+				<div class="main1_section1_title">
+					<h1 ng-bind='name1'></h1>
+					<span><i ng-bind='brand_name'></i> / <i ng-bind='brand_time'></i></span>
+				</div>
+				<div class="main1_big_logo main3_big_logo">
+					<img ng-src="{{img1}}" alt='' /> 
+				</div>
+			</section>
+			<section id='main1_section_2'>
+				<div class="main1_section1_title">
+					<h1>品牌标识组合</h1>
+					<span><i ng-bind='mix_name'></i> / <i ng-bind='mix_time'></i></span>
+				</div>
+				<ul class="main1_list ued_list">
+					<li ng-repeat='item in list1'>
+						<div>
+							<img ng-src='{{item.pic1}}' />
+						</div>
+						<div class='pos_wrap'>
+							<a ng-href='{{item.pic2}}' class="download_img">下载图片</a>
+							<a ng-href="{{item.pic3}}" class="download_files">下载源文件</a>
+						</div>
+					</li>				
+				</ul>
+			</section>
+		</div>
+		
+       <script>
+	   	    var app=angular.module('main1-app',[]);
+	   	    app.controller('main1-controller',function($scope){
+	   	    	    $.ajax({
+	   	    	    	type:"get",
+	   	    	    	url:"http://uxc.yixia.com/guifan/api/ued_json",
+	   	    	    	dataType:'jsonp',
+	   	    	    	success:function(data){
+	   	    	    		var result=data.result;
+	   	    	    		console.log(result)
+	   	    	    		var main1_brand=result.brand;
+	   	    	    		var log=result.log;
+	   	    	    		$scope.icon='/';
+	   	    	    		$scope.brand_name=log.brand.name;
+	   	    	    	    $scope.mix_name=log.brandmixlog.name;
+	   	    	    	    $scope.mix_time=log.brandmixlog.time.substring(0,10);
+	   	    	    		$scope.brand_time=log.brand.time.substring(0,10);
+	   	    	    		$scope.name1=main1_brand.name;
+	   	    	    		$scope.img1=main1_brand.preview;
+	   	    	    		$scope.list1=result.brandmix;
+	   	    	    		$scope.$apply();
+	   	    	    	}
+	   	    	    });
+	   	    })
+            
+	   </script>
+	</body>
+</html>

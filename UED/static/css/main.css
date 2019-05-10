@@ -1,0 +1,293 @@
+body{
+	background: #FAFAFA;
+}
+.wrapper{
+	padding-left:50px;
+}
+h1{
+	font-size: 20px;
+	color:#333333;
+	padding:40px 0 15px;
+	font-family: PingFangSC-medium;
+	text-indent: 5px;
+}
+.con-cards{
+	padding-top:40px;
+}
+.con-cards h2{
+	color:#333333;
+	font-size: 18px;
+}
+.con-cards h2 img{
+	padding-left:10px;
+	cursor: pointer;
+}
+.con-cards .card{
+	width:960px;
+	padding: 20px;
+	border:1px solid #E7E7E7;
+	background: #FEFEFE;
+	margin-top:9px;
+	float: left;
+	position: relative;
+}
+.con-cards .card .line-box .add-card-small img{
+	width:9px;
+}
+.line-box2{
+	float: left;
+	margin-right: 80px;
+}
+.line-box2:nth-child(2n){
+	margin-right:0;
+}
+.con-cards .card label{
+	width:42px;
+	display: inline-block;
+	text-align: right;
+	font-size: 14px;
+	color: #333333;
+	padding-right:0;
+	font-family: PingFangSC-light;
+}
+.con-cards .card label.txt{
+	padding-right: 0;
+}
+.con-cards .card .upload{
+	display: inline-block;
+	width:48px;
+	height:25px;
+	font-size: 12px;
+	color:#fff;
+	font-family: PingFangSC-light;
+	text-align: center;
+	background: #2CAB3F;
+	border:none;
+	padding:0;
+	line-height: 25px;
+	position: relative;
+	margin-left:10px;
+}
+.con-cards .card input[type='text']{
+	width:500px;
+}
+.con-cards .card textarea{
+	width:500px;
+	height:107px;
+	border:1px solid rgb(210, 210, 210);
+}
+.con-cards .card input[type='file']{
+	opacity: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.con-cards .card .reupload{
+	display: inline-block;
+	width:48px;
+	height:25px;
+	font-size: 12px;
+	color:#fff;
+	font-family: PingFangSC-light;
+	text-align: center;
+	border:none;
+	padding:0;
+	line-height: 25px;
+	position: relative;
+	background: #00A6F5;
+	margin-left:10px;
+}
+.con-cards .card b{
+	width:650px;
+	font-size: 12px;
+	font-family: PingFangSC-light;
+	color:#999999;
+	display: inline-block;
+	padding-left:10px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+.con-cards .card b.txt{
+	color: rgb(51, 51, 51);
+    vertical-align: text-top;
+    line-height: 20px;
+}
+.con-cards .card b.txt-color{
+	width:50px;
+	color: rgb(51, 51, 51);
+    vertical-align: text-top;
+    line-height: 20px;
+}
+.con-cards .card b.txt-content{
+	width:70px;
+	color: rgb(51, 51, 51);
+    vertical-align: text-top;
+    line-height: 20px;
+}
+.gap{
+	height:10px;
+}
+.none{
+	display: none;
+}
+.card-wrapper.template,.card-wrapper2.template{
+	width:840px;
+	height:240px;
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+    background: #fff;
+    box-shadow: 0px 0px 34px rgba(0,0,0,.3);
+    border-radius: 2px;
+    z-index: 1;
+}
+.template .card{
+	width:100%;
+	border:none;
+	box-sizing: border-box;
+}
+.template .btns{
+    float: right;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 27px;
+    right: 10px;
+}
+.template .btns .cancel{
+	display: inline-block;
+    width: 64px;
+    height: 32px;
+    font-size: 12px;
+    color: #fff;
+    font-family: PingFangSC-light;
+    text-align: center;
+    border: none;
+    padding: 0;
+    line-height: 32px;
+    position: relative;
+    background: #D8D8D8;
+    cursor: pointer;
+}
+.template .btns .sure{
+	cursor: pointer;
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+    font-size: 12px;
+    color: #fff;
+    font-family: PingFangSC-light;
+    text-align: center;
+    border: none;
+    padding: 0;
+    line-height: 32px;
+    position: relative;
+    background: #00A6F5;
+}
+.card-wrapper {
+	position: relative;
+}
+.card-wrapper .tools{
+    height: 33px;
+    position: absolute;
+    left: 1002px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+.card-wrapper .tools a{
+	width:32px;
+	height:32px;
+	margin-left: 10px;
+	display: inline-block;
+	transition:all 0.5s ease;
+	cursor: pointer; 
+}
+.card-wrapper .tools a.mod{
+	background: url(../img/modify-icon.png) no-repeat;
+}
+.card-wrapper .tools a.mod:hover{
+	background: url(../img/modify-on-icon.png) no-repeat;
+}
+.card-wrapper .tools a.del{
+	background: url(../img/del-icon.png) no-repeat;
+}
+.card-wrapper .tools a.del:hover{
+	background: url(../img/del-on-icon.png) no-repeat;
+}
+.card-wrapper .con{
+	float: left;
+}
+.card-wrapper .preview{
+    width: 130px;
+    float: right;
+    position: absolute;
+    height: 100%;
+    display: block;
+    right: 10px;
+    top: 0;
+}
+.card-wrapper .preview img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.del-dialog{
+	width:100%;
+	height:100%;
+	position: fixed;
+	display: none;
+	top:0;
+	left:0;
+	background: rgba(0,0,0,.4);
+}
+.del-dialog .con{
+	width:320px;
+	height:180px;
+	background: #fff;
+	position: absolute;
+	margin: auto;
+	left:0;
+	right: 0;
+	top:0;
+	bottom:0;
+}
+.del-dialog .con .d-btn{
+	width:320px;
+	height:40px;
+	background: #FF4E4E;
+	position: absolute;
+	left:0;
+	bottom:0;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+}
+.del-dialog .con p{
+	line-height: 140px;
+    text-align: center;
+}
+.del-dialog .con p img{
+	vertical-align: middle;
+}
+.del-dialog .con p b{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.del-dialog .con .close{
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    cursor: pointer;
+}

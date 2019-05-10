@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>公共控件</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+			img{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap" style="margin-bottom: 160px;">
+			<section id='control_header'>
+				<div class="main1_section1_title">
+					<h1>头像</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="size_listImg">
+		        	    <li style="border: 1px solid #E7E7E7;">
+		        	    	    <img src="../img/standard_grid.png" />
+		        	    </li>
+		        </ul>
+			</section>
+			<section id='control_box'>
+				<div class="main1_section1_title">
+					<h1>弹框</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <div style="width:100%;height:141px;">
+		        	    <ul class="icon_list" style="float: left;">
+			        	   <li>弹框层：居中 ，透明度0-1 ，大小80%-100%</li>
+			        	   <li>蒙版层：#000000   0-0.5</li>
+			        	   <li>备注：描述文字建议2行；titel特殊情况可去掉，描述上下居中；关闭动画逆向</li>
+		           </ul>
+			        <div style='width:388px;height:141px;float: right;'>
+			        	   <img src="../img/legend.png" style="width:100%;height:100%;" />
+			        </div>
+		        </div>
+		        <div class="grid_img" style="background-color: #DFE2E9;">
+		        	    <img src="../img/grid.png" />
+		        </div>
+			</section>
+			<section id='control_select'>
+				<div class="main1_section1_title">
+					<h1>选择器</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="size_listImg">
+		        	    <li style="background-color: #DFE2E9;">
+		        	    	    <img src="../img/standard_grid.png" />
+		        	    </li>
+		        </ul>
+			</section>
+			<section id='control_other'>
+				<div class="main1_section1_title">
+					<h1>其他</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="size_listImg">
+		        	    <li style="border: 1px solid #E7E7E7;">
+		        	    	    <img src="../img/standard_grid.png" />
+		        	    </li>
+		        </ul>
+			</section>
+		</div>
+		<ul class="main3_bottom">
+			<li class="click_last"> 
+				<div>
+					<i class="fa fa-arrow-left"></i>
+				    <span class="main3_last">上一项</span>
+				</div>
+				<span class="main3_last_name">按钮</span>
+			</li>
+			<li class="click_event"> 
+				<span class="main3_next_name">模块</span>
+				<div>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			$(function(){
+			 $('.click_event').click(function(){
+				window.parent.frames.mainFrame.location.href='main_4_module.html';
+				$.cookie('page_client',6);
+				window.parent.frames.leftFrame.location.reload();
+			  })
+			 $('.click_last').click(function(){
+			 	window.parent.frames.mainFrame.location.href='main_4_button.html';
+				$.cookie('page_client',4);
+				window.parent.frames.leftFrame.location.reload();
+			 })
+			})
+		</script>
+	</body>
+</html>

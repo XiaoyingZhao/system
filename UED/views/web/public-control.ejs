@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>秒拍客户端管理</title>
+	<link rel="stylesheet" href="../static/css/reset.css">
+	<link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>秒拍客户端管理</h1>
+		
+		<div class="con-cards clearfix">
+			<h2>公共控件</h2>
+			
+			<!-- 修改(1) -->
+			<% 
+				if(typeof data.public_control1_mod_data != 'undefined'){ 
+					var public_control1_mod_data = data.public_control1_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="1">
+				<input type="hidden" name="mod_id" value="<%=public_control1_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=public_control1_mod_data.title%>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='public_control1_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="public_control1_mod_img1"><%=public_control1_mod_data.img1 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/public-control'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(1) -->
+			<% 
+				var public_control1_data = data.public_control1_data[0];
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=public_control1_data.title %></b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt">图片</label>
+						<b>png格式，宽度1160px，RGB模式</b>
+					</div>
+					<div class="preview">
+						<img src="<%=public_control1_data.img1 %>" alt="">
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=1&act=mod&id=<%=public_control1_data.id %>"></a>
+					<a class="del" href="?page=1&act=del&id=<%=public_control1_data.id %>"></a>
+				</div>
+			</div>
+			
+			
+			<!-- 修改(2) -->
+			<% 
+				if(typeof data.public_control2_mod_data != 'undefined'){ 
+					var public_control2_mod_data = data.public_control2_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="2">
+				<input type="hidden" name="mod_id" value="<%=public_control2_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=public_control2_mod_data.title%>"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><textarea name="descr"><%=public_control2_mod_data.descr%></textarea></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='public_control2_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="public_control2_mod_img1"><%=public_control2_mod_data.img1 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/public-control'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(2) -->
+			<% 
+			if(typeof data.public_control2_data[0] != 'undefined'){
+				var public_control2_data = data.public_control2_data[0];
+				
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=public_control2_data.title %></b>
+					</div>
+					<div class="line-box">
+						<label class="txt">描述:</label>
+						<b class="txt"><%=public_control2_data.descr %></b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt">图片</label>
+						<b>png格式，宽度1160px，RGB模式</b>
+						
+					</div>
+					<div class="preview">
+						<img src="<%=public_control2_data.img1 %>" alt="">
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=2&act=mod&id=<%=public_control2_data.id %>"></a>
+					<a class="del" href="?page=2&act=del&id=<%=public_control2_data.id %>"></a>
+				</div>
+			</div>
+			<%}%>
+			
+			<!-- 修改(3) -->
+			<% 
+				if(typeof data.public_control3_mod_data != 'undefined'){ 
+					var public_control3_mod_data = data.public_control3_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="3">
+				<input type="hidden" name="mod_id" value="<%=public_control3_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=public_control3_mod_data.title%>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='ipublic_control3_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="public_control3_mod_img1"><%=public_control3_mod_data.img1 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/public-control'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(3) -->
+			<% 
+				if(typeof data.public_control3_data[0] != 'undefined'){ 
+					var public_control3_data = data.public_control3_data[0];
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=public_control3_data.title %></b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt">图片</label>
+						<b>png格式，宽度1160px，RGB模式</b>
+					</div>
+					<div class="preview">
+						<img src="<%=public_control3_data.img1 %>" alt="">
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=3&act=mod&id=<%=public_control3_data.id %>"></a>
+					<a class="del" href="?page=3&act=del&id=<%=public_control3_data.id %>"></a>
+				</div>
+			</div>
+			
+			<%}%>
+			
+			<!-- 修改(4) -->
+			<% 
+				if(typeof data.public_control4_mod_data != 'undefined'){ 
+					var public_control4_mod_data = data.public_control4_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="4">
+				<input type="hidden" name="mod_id" value="<%=public_control4_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=public_control4_mod_data.title%>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='public_control4_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="public_control4_mod_img1"><%=public_control4_mod_data.img1 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/public-control'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(4) -->
+			<% 
+				var public_control4_data = data.public_control4_data[0];
+				
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=public_control4_data.title %></b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt">图片</label>
+						<b>png格式，宽度1160px，RGB模式</b>
+					</div>
+					<div class="preview">
+						<img src="<%=public_control4_data.img1 %>" alt="">
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=4&act=mod&id=<%=public_control4_data.id %>"></a>
+					<a class="del" href="?page=4&act=del&id=<%=public_control4_data.id %>"></a>
+				</div>
+			</div>
+			
+			<!-- 修改(5) -->
+			<% 
+				if(typeof data.public_control5_mod_data != 'undefined'){ 
+					var public_control5_mod_data = data.public_control5_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="5">
+				<input type="hidden" name="mod_id" value="<%=public_control5_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=public_control5_mod_data.title%>"></b>
+							
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/public-control'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			<!-- 二级列表-添加-修改 -->
+				<!-- 添加 -->
+					<form action="?" method='post' enctype="multipart/form-data">
+						<input type="hidden" name="page_id" value="miaopaiapp_second_list">
+						<input type="hidden" name="upid" value="">
+						<div class="card-wrapper2 clearfix template miaopaiapp-add-template none">
+							<div class="card">
+								<div class="line-box">
+									<label>名称</label>
+									<b><input type="text" name="content1"></b>
+								</div>
+								<div class="gap"></div>
+								<div class="line-box">
+									<label></label>
+									<a class="upload" href="javascript:;"><input type="file" name="content2" onchange='public_control_second_content2.innerHTML=this.value'>上传</a>
+									<b id="public_control_second_content2">支持文件夹上传，内含png格式标识，400x400px，RGB模式，包括常规、文字反白、整体反白、整体反黑4种样式</b>
+								</div>
+							</div>
+							
+							<div class="btns">
+								<span class="cancel">取消</span>
+								<input type="submit" class="sure" value="添加">
+							</div>
+						</div>
+					</form>
+					
+				<!-- 修改 -->
+					<%	if(typeof data.public_control_second_mod_data != 'undefined'){ 
+					var public_control_second_mod_data = data.public_control_second_mod_data;
+					%>
+				
+					<form action="?" method='post' enctype="multipart/form-data">
+						<input type="hidden" name="page_id" value="miaopaiapp_second_list">
+						<input type="hidden" name="mod_id" value="<%=public_control_second_mod_data.id%>">
+						<div class="card-wrapper clearfix template miaopaiapp-add-template" style="height:150px">
+							<div class="card">
+								<div class="line-box">
+									<label>名称</label>
+									<b><input type="text" name="content1" value="<%=public_control_second_mod_data.content1%>"></b>
+								</div>
+								<div class="line-box">
+								<label>图片</label>
+								<a class="reupload" href="javascript:;"><input type="file" name='content2' onchange='public_control_second_mod_content2.innerHTML=this.value'>重传</a>
+								<b id="public_control_second_mod_content2"><%=public_control_second_mod_data.content2 %></b>
+							</div>
+							</div>
+							
+							<div class="btns">
+								<a class="cancel" href='/guifan/admin/miaopaiapp/public-control'>取消</a>
+								<input type="submit" class="sure" value="修改">
+							</div>
+						</div>
+					</form>
+					<%}%>
+			<!-- 二级列表-添加-修改end -->
+			
+			
+			<!-- 显示(5) -->
+			<% 
+			var public_control5_data = data.public_control5_data;
+			for(var i = 0,len = public_control5_data.length; i < len; i++){
+				if(public_control5_data[i].upid == 0){
+				
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt-color"><%=public_control5_data[i].title %></b>
+						<span style="cursor: pointer;" class='add-card-small add-card2' data-id='<%=public_control5_data[i].id %>'><img src="../static/img/add-icon.png" alt=""></span>
+						<a class='add-card-small' href="?page=5&act=mod&id=<%=public_control5_data[i].id %>"><img src="../static/img/edit2-icon.png" alt=""></a>
+					</div>
+					
+					<div class="gap"></div>
+					
+					<!-- 二级列表 -->
+					
+					
+					<!-- 显示 -->
+					
+					<%  for(var j=0,len_j = public_control5_data.length;j<len_j;j++ ){
+						    if(public_control5_data[i].id === public_control5_data[j].upid ){
+					%>	
+					<div class="line-box">
+						<label class="txt">名称:</label>
+						<b class="txt-color"><%=public_control5_data[j].content1 %></b>
+						<label class="txt">图片</label>
+						<b class="txt">png格式，宽度290px，高度290px，RGB模式</b>
+						
+						<a class='add-card-small' title="修改二级列表" href="?page=miaopaiapp_second_list&act=mod&id=<%=public_control5_data[j].id %>"><img src="../static/img/edit1-icon.png" alt=""></a>
+						<a class='add-card-small' title="删除二级列表" href="?page=miaopaiapp_second_list&act=del&id=<%=public_control5_data[j].id %>"><img src="../static/img/del2-icon.png" alt=""></a>
+					</div>
+					<%}}%>
+					<!-- 二级列表end -->
+				</div>
+				<div class="tools">
+					<a class="del" href="?page=5&act=del&id=<%=public_control5_data[i].id %>"></a>
+				</div>
+			</div>
+			<%}}%>
+				
+		</div>
+		
+		
+		
+		<div class="del-dialog">
+			<div class="con">
+				<span class="close"><img src="../static/img/close-icon.png" alt=""></span>
+				<p><img src="../static/img/warn-icon.png" alt=""><b>确定删除此模块？</b></p>
+				<div class="d-btn">确定</div>
+			</div>
+		</div>
+	</div>
+		<script src="../static/js/jquery-1.10.2.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		// 如果修改页面保持定位在当前位置
+		window.sessionStorage.public_control_scrollTop?document.documentElement.scrollTop = window.sessionStorage.public_control_scrollTop : "";
+		
+		$(".add-card").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			template.show();
+		});
+		
+		$(".add-card2").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper2.template");
+			
+			var upid = $(this).attr("data-id");
+			console.log($(this).closest(".con-cards").find("input[name=upid]"))
+			$(this).closest(".con-cards").find("input[name=upid]").val(upid);
+			
+			template.show();
+		});
+		
+		$(".cancel").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			var template2 = $(this).closest(".con-cards").find(".card-wrapper2.template");
+			
+			template.hide();
+			template2.hide();
+			
+			
+		});
+		
+		$(document).delegate(".del","click",function(e){
+			e = e || window.event; 
+			e.preventDefault();
+			del_link = $(this).attr('href');
+			$(".del-dialog").show();
+			return false
+		});
+		$(".del-dialog .d-btn").click(function () {
+			$(".del-dialog").hide();
+			window.location.href=del_link;
+			del_link = '';
+		});
+		$(".close").click(function(){
+			$(this).closest(".del-dialog").hide();
+		});
+		
+		$(document).delegate(".mod,.cancel,.sure","click",function(e){
+			var _top = document.documentElement.scrollTop || document.body.scrollTop;
+			window.sessionStorage.setItem("miaopai_scrollTop", _top);
+		});
+		
+	});
+		
+	</script>
+</body>
+</html>

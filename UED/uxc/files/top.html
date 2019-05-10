@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.top_wrap{
+				width:100%;
+			}
+		</style>
+	  </head>
+	<body>
+		<div class="top_wrap">
+			<div class="top_logo">
+				<img src="../img/logo.png" />
+				<h3>设计规范平台</h3>
+			</div>
+			<div id="top_nav">
+				<ul class='top_list1'>
+					<li><a href='left_1.html' target="leftFrame">一下品牌</a></li>
+					<li><a href='left_2.html' target="leftFrame">秒拍品牌</a></li>
+					<li class="yx_family"><a href='left_3.html' target="leftFrame">YX FAMILY</a></li>
+					<li class="miaopai_client"><a href='left_4.html' target="leftFrame">秒拍客户端</a></li>
+					<li><a href='left_5.html' target="leftFrame">UXC</a></li>
+				</ul>
+				<ul class="top_list2">
+					<li><a href="" class="help_html">帮助</a></li>
+					<li><a href="" class="login_href">登录</a></li>
+				</ul>
+				<ul class="top_list2_login">
+					<li><a href="" class="help_html">帮助</a></li>
+					<li><a href="https://eyun.baidu.com/enterprise/home#list/path=%2F&info=1" target="_blank">网盘</a></li>
+					<li class='backstage'><a href="http://uxc.yixia.com/guifan/admin" target="_blank">后台</a></li>
+					<li class="exit">
+						<i class="fa fa-power-off" aria-hidden="true"></i>
+						退出<span class="login_name"></span>
+					</li>
+				</ul>
+		   </div>
+		</div>
+	<script>
+		$(function(){
+			$('.top_list1').find('a').on('click',function(){
+				$('.top_list1').find('a').css('color','#999999');
+				$(this).css('color','#00A6F5');
+			})
+	       //点击nav跳转到相应页面
+	        $('.top_list1').find('li').click(function(){
+	        	    var index=$(this).index()+1;
+	        	    parent.document.getElementById('mainFrame').src="files/main_"+index+".html";
+	        })
+	       $('.yx_family').click(function(){
+	       	    $.cookie('page',0);
+	       })
+	       $('.miaopai_client').click(function(){
+	       	    $.cookie('page_client',0);
+	       })
+	       //登陆后显示用户名
+	       if($.cookie('uxc_username')){
+	       	    $('.top_list2').hide();
+	       	    $('.top_list2_login').show();
+	       	    $('.miaopai_client').show();
+	       	    var username=$.cookie('uxc_username');
+	       	    $('.login_name').html('('+username+')');
+	       	    if($.cookie('grade')){
+	       	    	    $('.backstage').hide();
+	       	    }else{
+	       	    	    $('.backstage').show();
+	       	    }
+	       }else{
+	       	    $('.top_list2').show();
+	       	    $('.top_list2_login').hide();
+	       	    window.parent.frames.mainFrame.location.reload();
+	       }
+	      //点击退出
+	      $('.exit').click(function(){
+	      	    $.cookie('uxc_username', '', { expires: -1 });
+	      	    $.cookie('grade','', { expires: -1 });
+	      	    $('.top_list2').show();
+	       	    $('.top_list2_login').hide();
+	       	    $('.miaopai_client').hide()
+	       	    window.parent.frames.mainFrame.location.reload();
+	      })
+		})
+		//点击登录
+		$('.login_href').on('click',function(){
+			top.location.href='login.html';
+		})
+       //点击帮助
+       $('.help_html').on('click',function(){
+			top.location.href='problem.html';
+		})
+	</script>
+ </body>
+</html>

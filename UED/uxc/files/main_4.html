@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>前言</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>	
+		<div class="wrap" style='margin-bottom: 160px;'>
+		   <div class="main1_section1_title">
+				<h1>设计目的</h1>
+				<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		   </div>
+		   <ul class="design_list">
+		   	   <li>1.帮助设计团队提高设计质量，工作效率。</li>
+		   	   <li>2.减少各方沟通成本，统一设计标准及工作方法。</li>
+		   	   <li>3.支持模块化设计，减少开发成本，加快产品开发迭代的设计速度。</li>
+		   	   <li>4.逐步提高视觉、交互体验，提升用户体验。</li>
+		   </ul>
+		   <div class="main1_section1_title">
+				<h1>设计标准原则</h1>
+				<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		   </div>
+		   <ul class="design_list">
+		   	   <li>1.高效设计、快速认知、快速记忆，降低认知成本。</li>
+		   	   <li>2.sketch设计规范尺寸375x667，设计元素可直使用UI KIT 内图层。</li>
+		   	   <li>3.规范针对重要内容制定，保证设计的发挥和产品迭代的设计弹性。</li>
+		   	   <li>4.关于输出使用sketch measure，切图@1x.pdf，@2x.png，@3x.png(PNG使用tinypng.com压缩）@2x.png命名xhdpi，@3x.png命名xxhdpi，共5个。</li>
+		   </ul>
+		   <div class="main1_section1_title">
+				<h1>备注</h1>
+				<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		   </div>
+		   <ul class="design_list">
+		   	   <li>1.规范不定期更新，更新内容在版本内说明，设计前请阅读并下载相关内容。</li>
+		   	   <li>2.IOS测试版下载地址 nb.yixia.com/miaopai/，Android测试版下载地址 http://nb.yixia.com/android</li>
+		   	   <li>3.项目分配注册google云账号，共享查看，走查使用mantis</li>
+		   </ul>
+		</div>
+		<ul class="main3_bottom">
+			<li> 
+				<div>
+					<i class="fa fa-arrow-left nowpage"></i>
+				    <span class="main3_last nowpage">上一项</span>
+				</div>
+				<span class="main3_last_name nowpage">无</span>
+			</li>
+			<li class="click_event"> 
+				<span class="main3_next_name">标准色</span>
+				<div>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			$(function(){
+				$('.click_event').click(function(){
+				window.parent.frames.mainFrame.location.href='main_4_color.html';
+				$.cookie('page_client',1);
+				window.parent.frames.leftFrame.location.reload();
+			  })
+			})
+		</script>
+	</body>
+</html>
+

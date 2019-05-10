@@ -1,0 +1,828 @@
+2017-10-17 15:03:30: ===============================================================================
+2017-10-17 15:03:30: --- New PM2 Daemon started ----------------------------------------------------
+2017-10-17 15:03:30: Time                 : Tue Oct 17 2017 15:03:30 GMT+0800 (CST)
+2017-10-17 15:03:30: PM2 version          : 2.7.1
+2017-10-17 15:03:30: Node.js version      : 8.7.0
+2017-10-17 15:03:30: Current arch         : x64
+2017-10-17 15:03:30: PM2 home             : /root/.pm2
+2017-10-17 15:03:30: PM2 PID file         : /root/.pm2/pm2.pid
+2017-10-17 15:03:30: RPC socket file      : /root/.pm2/rpc.sock
+2017-10-17 15:03:30: BUS socket file      : /root/.pm2/pub.sock
+2017-10-17 15:03:30: Application log path : /root/.pm2/logs
+2017-10-17 15:03:30: Process dump file    : /root/.pm2/dump.pm2
+2017-10-17 15:03:30: Concurrent actions   : 2
+2017-10-17 15:03:30: SIGTERM timeout      : 1600
+2017-10-17 15:03:30: ===============================================================================
+2017-10-17 15:09:43: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 15:09:43: App name:index id:0 online
+2017-10-17 16:53:30: 0
+2017-10-17 16:53:30: Stopping app:index id:0
+2017-10-17 16:53:30: App [index] with id [0] and pid [3353], exited with code [0] via signal [SIGINT]
+2017-10-17 16:53:30: pid=3353 msg=process killed
+2017-10-17 16:54:07: [Watch] Start watching index
+2017-10-17 16:54:07: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 16:54:07: App name:index id:0 online
+2017-10-17 16:54:40: Change detected on path routers/admin.js for app index - restarting
+2017-10-17 16:54:40: Stopping app:index id:0
+2017-10-17 16:54:40: App [index] with id [0] and pid [3441], exited with code [0] via signal [SIGINT]
+2017-10-17 16:54:40: pid=3441 msg=process killed
+2017-10-17 16:54:40: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 16:54:40: App name:index id:0 online
+2017-10-17 16:55:25: Change detected on path routers/nav.js for app index - restarting
+2017-10-17 16:55:25: Stopping app:index id:0
+2017-10-17 16:55:25: App [index] with id [0] and pid [3453], exited with code [0] via signal [SIGINT]
+2017-10-17 16:55:25: pid=3453 msg=process killed
+2017-10-17 16:55:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 16:55:25: App name:index id:0 online
+2017-10-17 16:55:26: Change detected on path routers/nav.js for app index - restarting
+2017-10-17 16:55:26: Stopping app:index id:0
+2017-10-17 16:55:26: App [index] with id [0] and pid [3468], exited with code [0] via signal [SIGINT]
+2017-10-17 16:55:26: pid=3468 msg=process killed
+2017-10-17 16:55:26: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 16:55:26: App name:index id:0 online
+2017-10-17 17:01:19: Change detected on path routers/admin.js for app index - restarting
+2017-10-17 17:01:19: Stopping app:index id:0
+2017-10-17 17:01:19: App [index] with id [0] and pid [3479], exited with code [0] via signal [SIGINT]
+2017-10-17 17:01:19: pid=3479 msg=process killed
+2017-10-17 17:01:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 17:01:19: App name:index id:0 online
+2017-10-17 17:02:01: Change detected on path routers/admin.js for app index - restarting
+2017-10-17 17:02:01: Stopping app:index id:0
+2017-10-17 17:02:01: App [index] with id [0] and pid [3506], exited with code [0] via signal [SIGINT]
+2017-10-17 17:02:01: pid=3506 msg=process killed
+2017-10-17 17:02:01: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 17:02:01: App name:index id:0 online
+2017-10-17 17:04:40: Change detected on path index.js for app index - restarting
+2017-10-17 17:04:40: Stopping app:index id:0
+2017-10-17 17:04:40: App [index] with id [0] and pid [3521], exited with code [0] via signal [SIGINT]
+2017-10-17 17:04:40: pid=3521 msg=process killed
+2017-10-17 17:04:40: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 17:04:40: App name:index id:0 online
+2017-10-17 17:07:52: Change detected on path index.js for app index - restarting
+2017-10-17 17:07:52: Stopping app:index id:0
+2017-10-17 17:07:52: App [index] with id [0] and pid [3536], exited with code [0] via signal [SIGINT]
+2017-10-17 17:07:53: pid=3536 msg=process killed
+2017-10-17 17:07:53: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 17:07:53: App name:index id:0 online
+2017-10-17 18:15:59: Change detected on path routers/api/json.js for app index - restarting
+2017-10-17 18:15:59: Stopping app:index id:0
+2017-10-17 18:15:59: App [index] with id [0] and pid [3551], exited with code [0] via signal [SIGINT]
+2017-10-17 18:15:59: pid=3551 msg=process killed
+2017-10-17 18:15:59: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-17 18:15:59: App name:index id:0 online
+2017-10-18 11:53:18: Change detected on path routers/api/json.js for app index - restarting
+2017-10-18 11:53:18: Stopping app:index id:0
+2017-10-18 11:53:18: App [index] with id [0] and pid [3579], exited with code [0] via signal [SIGINT]
+2017-10-18 11:53:18: pid=3579 msg=process killed
+2017-10-18 11:53:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:53:18: App name:index id:0 online
+2017-10-18 11:55:15: Change detected on path index.js for app index - restarting
+2017-10-18 11:55:15: Stopping app:index id:0
+2017-10-18 11:55:15: App [index] with id [0] and pid [3885], exited with code [0] via signal [SIGINT]
+2017-10-18 11:55:15: pid=3885 msg=process killed
+2017-10-18 11:55:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:15: App name:index id:0 online
+2017-10-18 11:55:16: App [index] with id [0] and pid [3897], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:16: App name:index id:0 online
+2017-10-18 11:55:16: App [index] with id [0] and pid [3907], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:16: App name:index id:0 online
+2017-10-18 11:55:16: App [index] with id [0] and pid [3917], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:16: App name:index id:0 online
+2017-10-18 11:55:17: App [index] with id [0] and pid [3927], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:17: App name:index id:0 online
+2017-10-18 11:55:17: App [index] with id [0] and pid [3937], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:17: App name:index id:0 online
+2017-10-18 11:55:17: App [index] with id [0] and pid [3947], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:17: App name:index id:0 online
+2017-10-18 11:55:18: App [index] with id [0] and pid [3957], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:18: App name:index id:0 online
+2017-10-18 11:55:18: App [index] with id [0] and pid [3967], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:18: App name:index id:0 online
+2017-10-18 11:55:18: App [index] with id [0] and pid [3977], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:18: App name:index id:0 online
+2017-10-18 11:55:18: App [index] with id [0] and pid [3987], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:18: App name:index id:0 online
+2017-10-18 11:55:19: App [index] with id [0] and pid [3997], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:19: App name:index id:0 online
+2017-10-18 11:55:19: App [index] with id [0] and pid [4007], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:19: App name:index id:0 online
+2017-10-18 11:55:19: App [index] with id [0] and pid [4017], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:19: App name:index id:0 online
+2017-10-18 11:55:20: App [index] with id [0] and pid [4027], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:20: App name:index id:0 online
+2017-10-18 11:55:20: App [index] with id [0] and pid [4037], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:55:20: App name:index id:0 online
+2017-10-18 11:55:20: App [index] with id [0] and pid [4047], exited with code [1] via signal [SIGINT]
+2017-10-18 11:55:20: Script /root/UED/index.js had too many unstable restarts (16). Stopped. "errored"
+2017-10-18 11:56:10: Change detected on path index.js for app index - restarting
+2017-10-18 11:56:10: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:10: App name:index id:0 online
+2017-10-18 11:56:10: App [index] with id [0] and pid [4057], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:10: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:10: App name:index id:0 online
+2017-10-18 11:56:11: App [index] with id [0] and pid [4067], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:11: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:11: App name:index id:0 online
+2017-10-18 11:56:11: App [index] with id [0] and pid [4077], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:11: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:11: App name:index id:0 online
+2017-10-18 11:56:11: App [index] with id [0] and pid [4087], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:11: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:11: App name:index id:0 online
+2017-10-18 11:56:12: App [index] with id [0] and pid [4097], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:12: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:12: App name:index id:0 online
+2017-10-18 11:56:12: App [index] with id [0] and pid [4107], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:12: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:12: App name:index id:0 online
+2017-10-18 11:56:12: App [index] with id [0] and pid [4117], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:12: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:12: App name:index id:0 online
+2017-10-18 11:56:12: App [index] with id [0] and pid [4127], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:13: App name:index id:0 online
+2017-10-18 11:56:13: App [index] with id [0] and pid [4137], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:13: App name:index id:0 online
+2017-10-18 11:56:13: App [index] with id [0] and pid [4147], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:13: App name:index id:0 online
+2017-10-18 11:56:13: App [index] with id [0] and pid [4157], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:13: App name:index id:0 online
+2017-10-18 11:56:14: App [index] with id [0] and pid [4167], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:14: App name:index id:0 online
+2017-10-18 11:56:14: App [index] with id [0] and pid [4177], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:14: App name:index id:0 online
+2017-10-18 11:56:14: App [index] with id [0] and pid [4187], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:14: App name:index id:0 online
+2017-10-18 11:56:15: App [index] with id [0] and pid [4197], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:15: App name:index id:0 online
+2017-10-18 11:56:15: App [index] with id [0] and pid [4207], exited with code [1] via signal [SIGINT]
+2017-10-18 11:56:15: Script /root/UED/index.js had too many unstable restarts (16). Stopped. "errored"
+2017-10-18 11:56:19: Change detected on path index.js for app index - restarting
+2017-10-18 11:56:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:19: App name:index id:0 online
+2017-10-18 11:56:31: Change detected on path index.js for app index - restarting
+2017-10-18 11:56:31: Stopping app:index id:0
+2017-10-18 11:56:31: App [index] with id [0] and pid [4217], exited with code [0] via signal [SIGINT]
+2017-10-18 11:56:31: pid=4217 msg=process killed
+2017-10-18 11:56:31: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 11:56:31: App name:index id:0 online
+2017-10-18 17:35:56: Change detected on path routers/api/json.js for app index - restarting
+2017-10-18 17:35:56: Stopping app:index id:0
+2017-10-18 17:35:56: App [index] with id [0] and pid [4228], exited with code [0] via signal [SIGINT]
+2017-10-18 17:35:56: pid=4228 msg=process killed
+2017-10-18 17:35:56: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 17:35:56: App name:index id:0 online
+2017-10-18 18:34:46: Change detected on path routers/api/json.js for app index - restarting
+2017-10-18 18:34:46: Stopping app:index id:0
+2017-10-18 18:34:46: App [index] with id [0] and pid [4319], exited with code [0] via signal [SIGINT]
+2017-10-18 18:34:46: pid=4319 msg=process killed
+2017-10-18 18:34:46: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-18 18:34:46: App name:index id:0 online
+2017-10-25 18:07:03: Change detected on path routers/api/untitled.html for app index - restarting
+2017-10-25 18:07:03: Stopping app:index id:0
+2017-10-25 18:07:03: App [index] with id [0] and pid [4343], exited with code [0] via signal [SIGINT]
+2017-10-25 18:07:03: pid=4343 msg=process killed
+2017-10-25 18:07:03: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-25 18:07:03: App name:index id:0 online
+2017-10-25 18:07:33: Change detected on path routers/api/untitled.html for app index - restarting
+2017-10-25 18:07:33: Stopping app:index id:0
+2017-10-25 18:07:33: App [index] with id [0] and pid [6618], exited with code [0] via signal [SIGINT]
+2017-10-25 18:07:33: pid=6618 msg=process killed
+2017-10-25 18:07:33: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-25 18:07:33: App name:index id:0 online
+2017-10-26 10:53:07: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 10:53:07: Stopping app:index id:0
+2017-10-26 10:53:07: App [index] with id [0] and pid [6638], exited with code [0] via signal [SIGINT]
+2017-10-26 10:53:07: pid=6638 msg=process killed
+2017-10-26 10:53:07: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 10:53:07: App name:index id:0 online
+2017-10-26 10:57:58: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 10:57:58: Stopping app:index id:0
+2017-10-26 10:57:58: App [index] with id [0] and pid [6879], exited with code [0] via signal [SIGINT]
+2017-10-26 10:57:58: pid=6879 msg=process killed
+2017-10-26 10:57:58: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 10:57:58: App name:index id:0 online
+2017-10-26 10:58:46: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 10:58:46: Stopping app:index id:0
+2017-10-26 10:58:46: App [index] with id [0] and pid [6892], exited with code [0] via signal [SIGINT]
+2017-10-26 10:58:46: pid=6892 msg=process killed
+2017-10-26 10:58:46: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 10:58:46: App name:index id:0 online
+2017-10-26 19:59:24: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 19:59:24: Stopping app:index id:0
+2017-10-26 19:59:25: App [index] with id [0] and pid [6904], exited with code [0] via signal [SIGINT]
+2017-10-26 19:59:25: pid=6904 msg=process killed
+2017-10-26 19:59:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 19:59:25: App name:index id:0 online
+2017-10-26 19:59:38: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 19:59:38: Stopping app:index id:0
+2017-10-26 19:59:39: App [index] with id [0] and pid [7033], exited with code [0] via signal [SIGINT]
+2017-10-26 19:59:39: pid=7033 msg=process killed
+2017-10-26 19:59:39: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 19:59:39: App name:index id:0 online
+2017-10-26 19:59:40: App [index] with id [0] and pid [7044], exited with code [1] via signal [SIGINT]
+2017-10-26 19:59:40: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 19:59:40: App name:index id:0 online
+2017-10-26 20:00:32: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 20:00:32: Stopping app:index id:0
+2017-10-26 20:00:32: App [index] with id [0] and pid [7055], exited with code [0] via signal [SIGINT]
+2017-10-26 20:00:32: pid=7055 msg=process killed
+2017-10-26 20:00:32: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:00:32: App name:index id:0 online
+2017-10-26 20:00:36: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 20:00:36: Stopping app:index id:0
+2017-10-26 20:00:36: App [index] with id [0] and pid [7090], exited with code [0] via signal [SIGINT]
+2017-10-26 20:00:36: pid=7090 msg=process killed
+2017-10-26 20:00:36: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:00:36: App name:index id:0 online
+2017-10-26 20:00:38: App [index] with id [0] and pid [7101], exited with code [1] via signal [SIGINT]
+2017-10-26 20:00:38: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:00:38: App name:index id:0 online
+2017-10-26 20:00:39: App [index] with id [0] and pid [7112], exited with code [1] via signal [SIGINT]
+2017-10-26 20:00:39: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:00:39: App name:index id:0 online
+2017-10-26 20:01:31: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 20:01:31: Stopping app:index id:0
+2017-10-26 20:01:31: App [index] with id [0] and pid [7123], exited with code [0] via signal [SIGINT]
+2017-10-26 20:01:31: pid=7123 msg=process killed
+2017-10-26 20:01:31: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:01:31: App name:index id:0 online
+2017-10-26 20:01:33: App [index] with id [0] and pid [7146], exited with code [1] via signal [SIGINT]
+2017-10-26 20:01:33: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:01:33: App name:index id:0 online
+2017-10-26 20:02:08: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 20:02:08: Stopping app:index id:0
+2017-10-26 20:02:08: App [index] with id [0] and pid [7157], exited with code [0] via signal [SIGINT]
+2017-10-26 20:02:08: pid=7157 msg=process killed
+2017-10-26 20:02:08: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:02:08: App name:index id:0 online
+2017-10-26 20:02:18: Change detected on path routers/api/json.js for app index - restarting
+2017-10-26 20:02:18: Stopping app:index id:0
+2017-10-26 20:02:18: App [index] with id [0] and pid [7168], exited with code [0] via signal [SIGINT]
+2017-10-26 20:02:18: pid=7168 msg=process killed
+2017-10-26 20:02:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-26 20:02:18: App name:index id:0 online
+2017-10-27 09:28:41: Change detected on path index.js for app index - restarting
+2017-10-27 09:28:41: Stopping app:index id:0
+2017-10-27 09:28:41: App [index] with id [0] and pid [7179], exited with code [0] via signal [SIGINT]
+2017-10-27 09:28:41: pid=7179 msg=process killed
+2017-10-27 09:28:41: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 09:28:41: App name:index id:0 online
+2017-10-27 10:10:20: Change detected on path routers/api/json.js for app index - restarting
+2017-10-27 10:10:20: Stopping app:index id:0
+2017-10-27 10:10:20: App [index] with id [0] and pid [7381], exited with code [0] via signal [SIGINT]
+2017-10-27 10:10:20: pid=7381 msg=process killed
+2017-10-27 10:10:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 10:10:20: App name:index id:0 online
+2017-10-27 10:13:23: Change detected on path routers/api/json.js for app index - restarting
+2017-10-27 10:13:23: Stopping app:index id:0
+2017-10-27 10:13:23: App [index] with id [0] and pid [7432], exited with code [0] via signal [SIGINT]
+2017-10-27 10:13:23: pid=7432 msg=process killed
+2017-10-27 10:13:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 10:13:23: App name:index id:0 online
+2017-10-27 11:11:43: Change detected on path views/web/nav.ejs for app index - restarting
+2017-10-27 11:11:43: Stopping app:index id:0
+2017-10-27 11:11:43: App [index] with id [0] and pid [7443], exited with code [0] via signal [SIGINT]
+2017-10-27 11:11:43: pid=7443 msg=process killed
+2017-10-27 11:11:43: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:11:43: App name:index id:0 online
+2017-10-27 11:12:18: Change detected on path static/css/nav.css for app index - restarting
+2017-10-27 11:12:18: Stopping app:index id:0
+2017-10-27 11:12:18: App [index] with id [0] and pid [7467], exited with code [0] via signal [SIGINT]
+2017-10-27 11:12:18: pid=7467 msg=process killed
+2017-10-27 11:12:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:12:18: App name:index id:0 online
+2017-10-27 11:12:27: Change detected on path static/css/nav.css for app index - restarting
+2017-10-27 11:12:27: Stopping app:index id:0
+2017-10-27 11:12:27: App [index] with id [0] and pid [7478], exited with code [0] via signal [SIGINT]
+2017-10-27 11:12:27: pid=7478 msg=process killed
+2017-10-27 11:12:27: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:12:27: App name:index id:0 online
+2017-10-27 11:23:30: Change detected on path common/getdata.js for app index - restarting
+2017-10-27 11:23:30: Stopping app:index id:0
+2017-10-27 11:23:31: App [index] with id [0] and pid [7489], exited with code [0] via signal [SIGINT]
+2017-10-27 11:23:31: pid=7489 msg=process killed
+2017-10-27 11:23:31: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:23:31: App name:index id:0 online
+2017-10-27 11:23:31: Change detected on path index.js for app index - restarting
+2017-10-27 11:23:31: Stopping app:index id:0
+2017-10-27 11:23:31: App [index] with id [0] and pid [7529], exited with code [0] via signal [SIGINT]
+2017-10-27 11:23:31: pid=7529 msg=process killed
+2017-10-27 11:23:31: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:23:31: App name:index id:0 online
+2017-10-27 11:23:31: Change detected on path libs/common.js for app index - restarting
+2017-10-27 11:23:31: Stopping app:index id:0
+2017-10-27 11:23:31: App [index] with id [0] and pid [7536], exited with code [0] via signal [SIGINT]
+2017-10-27 11:23:31: pid=7536 msg=process killed
+2017-10-27 11:23:31: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:23:31: App name:index id:0 online
+2017-10-27 11:26:13: Change detected on path package-lock.json for app index - restarting
+2017-10-27 11:26:13: Stopping app:index id:0
+2017-10-27 11:26:13: App [index] with id [0] and pid [7543], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:13: pid=7543 msg=process killed
+2017-10-27 11:26:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:13: App name:index id:0 online
+2017-10-27 11:26:13: Change detected on path package.json for app index - restarting
+2017-10-27 11:26:13: Stopping app:index id:0
+2017-10-27 11:26:13: App [index] with id [0] and pid [7554], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:13: pid=7554 msg=process killed
+2017-10-27 11:26:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:14: App name:index id:0 online
+2017-10-27 11:26:14: Change detected on path routers/admin.js for app index - restarting
+2017-10-27 11:26:14: Stopping app:index id:0
+2017-10-27 11:26:14: App [index] with id [0] and pid [7561], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:14: pid=7561 msg=process killed
+2017-10-27 11:26:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:14: App name:index id:0 online
+2017-10-27 11:26:14: Change detected on path routers/api/json.js for app index - restarting
+2017-10-27 11:26:14: Stopping app:index id:0
+2017-10-27 11:26:14: App [index] with id [0] and pid [7568], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:14: pid=7568 msg=process killed
+2017-10-27 11:26:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:14: App name:index id:0 online
+2017-10-27 11:26:14: Change detected on path routers/miaopai.js for app index - restarting
+2017-10-27 11:26:14: Stopping app:index id:0
+2017-10-27 11:26:14: App [index] with id [0] and pid [7575], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:14: pid=7575 msg=process killed
+2017-10-27 11:26:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:14: App name:index id:0 online
+2017-10-27 11:26:14: Change detected on path routers/nav.js for app index - restarting
+2017-10-27 11:26:14: Stopping app:index id:0
+2017-10-27 11:26:14: App [index] with id [0] and pid [7582], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:14: pid=7582 msg=process killed
+2017-10-27 11:26:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:14: App name:index id:0 online
+2017-10-27 11:26:14: Change detected on path routers/ued.js for app index - restarting
+2017-10-27 11:26:14: Stopping app:index id:0
+2017-10-27 11:26:14: App [index] with id [0] and pid [7589], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:14: pid=7589 msg=process killed
+2017-10-27 11:26:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:14: App name:index id:0 online
+2017-10-27 11:26:14: Change detected on path routers/yixia.js for app index - restarting
+2017-10-27 11:26:14: Stopping app:index id:0
+2017-10-27 11:26:14: App [index] with id [0] and pid [7596], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:14: pid=7596 msg=process killed
+2017-10-27 11:26:14: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:14: App name:index id:0 online
+2017-10-27 11:26:15: Change detected on path routers/yxfamily.js for app index - restarting
+2017-10-27 11:26:15: Stopping app:index id:0
+2017-10-27 11:26:15: App [index] with id [0] and pid [7603], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:15: pid=7603 msg=process killed
+2017-10-27 11:26:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:15: App name:index id:0 online
+2017-10-27 11:26:15: Change detected on path static/css/main.css for app index - restarting
+2017-10-27 11:26:15: Stopping app:index id:0
+2017-10-27 11:26:15: App [index] with id [0] and pid [7610], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:15: pid=7610 msg=process killed
+2017-10-27 11:26:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:15: App name:index id:0 online
+2017-10-27 11:26:15: Change detected on path static/css/nav.css for app index - restarting
+2017-10-27 11:26:15: Stopping app:index id:0
+2017-10-27 11:26:15: App [index] with id [0] and pid [7621], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:15: pid=7621 msg=process killed
+2017-10-27 11:26:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:15: App name:index id:0 online
+2017-10-27 11:26:15: Change detected on path static/css/reset.css for app index - restarting
+2017-10-27 11:26:15: Stopping app:index id:0
+2017-10-27 11:26:15: App [index] with id [0] and pid [7628], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:15: pid=7628 msg=process killed
+2017-10-27 11:26:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:15: App name:index id:0 online
+2017-10-27 11:26:15: Change detected on path static/img/add-icon.png for app index - restarting
+2017-10-27 11:26:15: Stopping app:index id:0
+2017-10-27 11:26:15: App [index] with id [0] and pid [7635], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:15: pid=7635 msg=process killed
+2017-10-27 11:26:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:15: App name:index id:0 online
+2017-10-27 11:26:15: Change detected on path static/img/admin-icon.png for app index - restarting
+2017-10-27 11:26:15: Stopping app:index id:0
+2017-10-27 11:26:15: App [index] with id [0] and pid [7642], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:15: pid=7642 msg=process killed
+2017-10-27 11:26:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:15: App name:index id:0 online
+2017-10-27 11:26:15: Change detected on path static/img/close-icon.png for app index - restarting
+2017-10-27 11:26:15: Stopping app:index id:0
+2017-10-27 11:26:15: App [index] with id [0] and pid [7649], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:16: pid=7649 msg=process killed
+2017-10-27 11:26:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:16: App name:index id:0 online
+2017-10-27 11:26:16: Change detected on path static/img/default-head.png for app index - restarting
+2017-10-27 11:26:16: Stopping app:index id:0
+2017-10-27 11:26:16: App [index] with id [0] and pid [7656], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:16: pid=7656 msg=process killed
+2017-10-27 11:26:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:16: App name:index id:0 online
+2017-10-27 11:26:16: Change detected on path static/img/del-icon.png for app index - restarting
+2017-10-27 11:26:16: Stopping app:index id:0
+2017-10-27 11:26:16: App [index] with id [0] and pid [7663], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:16: pid=7663 msg=process killed
+2017-10-27 11:26:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:16: App name:index id:0 online
+2017-10-27 11:26:16: Change detected on path static/img/del-on-icon.png for app index - restarting
+2017-10-27 11:26:16: Stopping app:index id:0
+2017-10-27 11:26:16: App [index] with id [0] and pid [7670], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:16: pid=7670 msg=process killed
+2017-10-27 11:26:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:16: App name:index id:0 online
+2017-10-27 11:26:16: Change detected on path static/img/modify-icon.png for app index - restarting
+2017-10-27 11:26:16: Stopping app:index id:0
+2017-10-27 11:26:16: App [index] with id [0] and pid [7677], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:16: pid=7677 msg=process killed
+2017-10-27 11:26:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:16: App name:index id:0 online
+2017-10-27 11:26:16: Change detected on path static/img/modify-on-icon.png for app index - restarting
+2017-10-27 11:26:16: Stopping app:index id:0
+2017-10-27 11:26:16: App [index] with id [0] and pid [7684], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:16: pid=7684 msg=process killed
+2017-10-27 11:26:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:16: App name:index id:0 online
+2017-10-27 11:26:16: Change detected on path static/img/warn-icon.png for app index - restarting
+2017-10-27 11:26:16: Stopping app:index id:0
+2017-10-27 11:26:16: App [index] with id [0] and pid [7691], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:17: pid=7691 msg=process killed
+2017-10-27 11:26:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:17: App name:index id:0 online
+2017-10-27 11:26:17: Change detected on path static/img/yes-icon.png for app index - restarting
+2017-10-27 11:26:17: Stopping app:index id:0
+2017-10-27 11:26:17: App [index] with id [0] and pid [7698], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:17: pid=7698 msg=process killed
+2017-10-27 11:26:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:17: App name:index id:0 online
+2017-10-27 11:26:17: Change detected on path static/js/jquery-1.10.2.min.js for app index - restarting
+2017-10-27 11:26:17: Stopping app:index id:0
+2017-10-27 11:26:17: App [index] with id [0] and pid [7705], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:17: pid=7705 msg=process killed
+2017-10-27 11:26:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:17: App name:index id:0 online
+2017-10-27 11:26:17: Change detected on path static/upload/933e01cc1e0698de3d6e6d0260fb602c.gif for app index - restarting
+2017-10-27 11:26:17: Stopping app:index id:0
+2017-10-27 11:26:17: App [index] with id [0] and pid [7712], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:17: pid=7712 msg=process killed
+2017-10-27 11:26:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:17: App name:index id:0 online
+2017-10-27 11:26:17: Change detected on path views/admin/index.ejs for app index - restarting
+2017-10-27 11:26:17: Stopping app:index id:0
+2017-10-27 11:26:17: App [index] with id [0] and pid [7719], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:17: pid=7719 msg=process killed
+2017-10-27 11:26:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:17: App name:index id:0 online
+2017-10-27 11:26:17: Change detected on path views/admin/login.ejs for app index - restarting
+2017-10-27 11:26:17: Stopping app:index id:0
+2017-10-27 11:26:17: App [index] with id [0] and pid [7726], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:17: pid=7726 msg=process killed
+2017-10-27 11:26:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:17: App name:index id:0 online
+2017-10-27 11:26:17: Change detected on path views/web/miaopai.ejs for app index - restarting
+2017-10-27 11:26:17: Stopping app:index id:0
+2017-10-27 11:26:17: App [index] with id [0] and pid [7733], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:18: pid=7733 msg=process killed
+2017-10-27 11:26:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:18: App name:index id:0 online
+2017-10-27 11:26:18: Change detected on path views/web/nav.ejs for app index - restarting
+2017-10-27 11:26:18: Stopping app:index id:0
+2017-10-27 11:26:18: App [index] with id [0] and pid [7740], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:18: pid=7740 msg=process killed
+2017-10-27 11:26:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:18: App name:index id:0 online
+2017-10-27 11:26:18: Change detected on path views/web/ued.ejs for app index - restarting
+2017-10-27 11:26:18: Stopping app:index id:0
+2017-10-27 11:26:18: App [index] with id [0] and pid [7747], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:18: pid=7747 msg=process killed
+2017-10-27 11:26:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:18: App name:index id:0 online
+2017-10-27 11:26:18: Change detected on path views/web/yixia.ejs for app index - restarting
+2017-10-27 11:26:18: Stopping app:index id:0
+2017-10-27 11:26:18: App [index] with id [0] and pid [7754], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:18: pid=7754 msg=process killed
+2017-10-27 11:26:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:18: App name:index id:0 online
+2017-10-27 11:26:18: Change detected on path views/web/yxfamily.ejs for app index - restarting
+2017-10-27 11:26:18: Stopping app:index id:0
+2017-10-27 11:26:18: App [index] with id [0] and pid [7761], exited with code [0] via signal [SIGINT]
+2017-10-27 11:26:18: pid=7761 msg=process killed
+2017-10-27 11:26:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 11:26:18: App name:index id:0 online
+2017-10-27 17:23:54: Change detected on path index.js for app index - restarting
+2017-10-27 17:23:54: Stopping app:index id:0
+2017-10-27 17:23:54: App [index] with id [0] and pid [7768], exited with code [0] via signal [SIGINT]
+2017-10-27 17:23:54: pid=7768 msg=process killed
+2017-10-27 17:23:54: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:23:54: App name:index id:0 online
+2017-10-27 17:33:45: Change detected on path static/upload/1b676ad86b5218b1e1cc895c0d545a6a for app index - restarting
+2017-10-27 17:33:45: Stopping app:index id:0
+2017-10-27 17:33:45: App [index] with id [0] and pid [7860], exited with code [0] via signal [SIGINT]
+2017-10-27 17:33:46: pid=7860 msg=process killed
+2017-10-27 17:33:46: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:33:46: App name:index id:0 online
+2017-10-27 17:34:55: Change detected on path static/upload/976090a0d54bbc2e462e9482dc56bb26 for app index - restarting
+2017-10-27 17:34:55: Stopping app:index id:0
+2017-10-27 17:34:55: App [index] with id [0] and pid [7890], exited with code [0] via signal [SIGINT]
+2017-10-27 17:34:55: pid=7890 msg=process killed
+2017-10-27 17:34:55: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:34:55: App name:index id:0 online
+2017-10-27 17:35:29: Change detected on path static/upload/dc4a95777b328ea086612446e76fda30 for app index - restarting
+2017-10-27 17:35:29: Stopping app:index id:0
+2017-10-27 17:35:29: App [index] with id [0] and pid [7905], exited with code [0] via signal [SIGINT]
+2017-10-27 17:35:29: pid=7905 msg=process killed
+2017-10-27 17:35:29: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:35:29: App name:index id:0 online
+2017-10-27 17:36:48: Change detected on path static/upload/e90861ed805862995b2dbfcaea3b25d6 for app index - restarting
+2017-10-27 17:36:48: Stopping app:index id:0
+2017-10-27 17:36:48: App [index] with id [0] and pid [7920], exited with code [0] via signal [SIGINT]
+2017-10-27 17:36:48: pid=7920 msg=process killed
+2017-10-27 17:36:48: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:36:48: App name:index id:0 online
+2017-10-27 17:43:22: Change detected on path static/upload/9d20ae274fe83defdb65901611ab9a0f for app index - restarting
+2017-10-27 17:43:22: Stopping app:index id:0
+2017-10-27 17:43:22: App [index] with id [0] and pid [7937], exited with code [0] via signal [SIGINT]
+2017-10-27 17:43:22: pid=7937 msg=process killed
+2017-10-27 17:43:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:43:22: App name:index id:0 online
+2017-10-27 17:48:13: Change detected on path static/upload/210b4f94756df322550c56136b435cd2 for app index - restarting
+2017-10-27 17:48:13: Stopping app:index id:0
+2017-10-27 17:48:13: App [index] with id [0] and pid [7966], exited with code [0] via signal [SIGINT]
+2017-10-27 17:48:13: pid=7966 msg=process killed
+2017-10-27 17:48:13: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:48:13: App name:index id:0 online
+2017-10-27 17:50:23: Change detected on path static/upload/7b313743e1d82016132b63223f9ff782 for app index - restarting
+2017-10-27 17:50:23: Stopping app:index id:0
+2017-10-27 17:50:23: App [index] with id [0] and pid [7983], exited with code [0] via signal [SIGINT]
+2017-10-27 17:50:23: pid=7983 msg=process killed
+2017-10-27 17:50:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:50:23: App name:index id:0 online
+2017-10-27 17:52:23: Stopping app:index id:0
+2017-10-27 17:52:23: App [index] with id [0] and pid [7998], exited with code [0] via signal [SIGINT]
+2017-10-27 17:52:23: pid=7998 msg=process killed
+2017-10-27 17:52:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:52:23: App name:index id:0 online
+2017-10-27 17:53:12: Change detected on path static/upload/bd75a1886f61c463facff08840407274.gif for app index - restarting
+2017-10-27 17:53:12: Stopping app:index id:0
+2017-10-27 17:53:12: App [index] with id [0] and pid [8039], exited with code [0] via signal [SIGINT]
+2017-10-27 17:53:12: pid=8039 msg=process killed
+2017-10-27 17:53:12: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:53:12: App name:index id:0 online
+2017-10-27 17:53:53: Change detected on path static/upload/56143bf2dcbe7ee1c753e7d24b97808e for app index - restarting
+2017-10-27 17:53:53: Stopping app:index id:0
+2017-10-27 17:53:53: App [index] with id [0] and pid [8056], exited with code [0] via signal [SIGINT]
+2017-10-27 17:53:53: pid=8056 msg=process killed
+2017-10-27 17:53:53: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:53:53: App name:index id:0 online
+2017-10-27 17:54:16: Change detected on path static/upload/44560568f9b94b23e4b4c235116088e6 for app index - restarting
+2017-10-27 17:54:16: Stopping app:index id:0
+2017-10-27 17:54:16: App [index] with id [0] and pid [8073], exited with code [0] via signal [SIGINT]
+2017-10-27 17:54:16: pid=8073 msg=process killed
+2017-10-27 17:54:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-27 17:54:16: App name:index id:0 online
+2017-10-30 09:52:40: Change detected on path static/upload/787eeb18083ebb33e69d5939c367df1a for app index - restarting
+2017-10-30 09:52:40: Stopping app:index id:0
+2017-10-30 09:52:40: App [index] with id [0] and pid [8090], exited with code [0] via signal [SIGINT]
+2017-10-30 09:52:40: pid=8090 msg=process killed
+2017-10-30 09:52:40: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-30 09:52:41: App name:index id:0 online
+2017-10-30 09:53:25: Change detected on path static/upload/bc9965a84ad3156449986b7d1b9ebcef for app index - restarting
+2017-10-30 09:53:25: Stopping app:index id:0
+2017-10-30 09:53:25: App [index] with id [0] and pid [8980], exited with code [0] via signal [SIGINT]
+2017-10-30 09:53:25: pid=8980 msg=process killed
+2017-10-30 09:53:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-30 09:53:25: App name:index id:0 online
+2017-10-30 09:55:59: Change detected on path static/upload/785eb3055dad46769ac01b97c4db2b64 for app index - restarting
+2017-10-30 09:55:59: Stopping app:index id:0
+2017-10-30 09:55:59: App [index] with id [0] and pid [8997], exited with code [0] via signal [SIGINT]
+2017-10-30 09:55:59: pid=8997 msg=process killed
+2017-10-30 09:55:59: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-30 09:55:59: App name:index id:0 online
+2017-10-30 09:57:51: Change detected on path index.js for app index - restarting
+2017-10-30 09:57:51: Stopping app:index id:0
+2017-10-30 09:57:51: App [index] with id [0] and pid [9014], exited with code [0] via signal [SIGINT]
+2017-10-30 09:57:51: pid=9014 msg=process killed
+2017-10-30 09:57:51: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-30 09:57:51: App name:index id:0 online
+2017-10-30 09:58:33: Change detected on path static/upload/d6c31b22e134bf19ab1e2f9276cd47d7 for app index - restarting
+2017-10-30 09:58:33: Stopping app:index id:0
+2017-10-30 09:58:33: App [index] with id [0] and pid [9034], exited with code [0] via signal [SIGINT]
+2017-10-30 09:58:33: pid=9034 msg=process killed
+2017-10-30 09:58:33: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-30 09:58:33: App name:index id:0 online
+2017-10-30 09:58:44: Change detected on path index.js for app index - restarting
+2017-10-30 09:58:44: Stopping app:index id:0
+2017-10-30 09:58:44: App [index] with id [0] and pid [9051], exited with code [0] via signal [SIGINT]
+2017-10-30 09:58:44: pid=9051 msg=process killed
+2017-10-30 09:58:44: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-30 09:58:44: App name:index id:0 online
+2017-10-30 10:16:41: 0
+2017-10-30 10:16:41: [Watch] Stop watching index
+2017-10-30 10:16:41: Stopping app:index id:0
+2017-10-30 10:16:41: App [index] with id [0] and pid [9062], exited with code [0] via signal [SIGINT]
+2017-10-30 10:16:41: pid=9062 msg=process killed
+2017-10-30 10:17:22: 0
+2017-10-30 10:21:39: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-30 10:21:39: App name:index id:0 online
+2017-10-31 11:44:42: Stopping app:index id:0
+2017-10-31 11:44:42: App [index] with id [0] and pid [9226], exited with code [0] via signal [SIGINT]
+2017-10-31 11:44:43: pid=9226 msg=process killed
+2017-10-31 11:44:43: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-31 11:44:43: App name:index id:0 online
+2017-10-31 18:15:36: Stopping app:index id:0
+2017-10-31 18:15:36: App [index] with id [0] and pid [9615], exited with code [0] via signal [SIGINT]
+2017-10-31 18:15:36: pid=9615 msg=process killed
+2017-10-31 18:15:36: Starting execution sequence in -fork mode- for app name:index id:0
+2017-10-31 18:15:36: App name:index id:0 online
+2017-11-01 18:07:25: Stopping app:index id:0
+2017-11-01 18:07:25: App [index] with id [0] and pid [9728], exited with code [0] via signal [SIGINT]
+2017-11-01 18:07:25: pid=9728 msg=process killed
+2017-11-01 18:07:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-01 18:07:25: App name:index id:0 online
+2017-11-01 18:08:42: Stopping app:index id:0
+2017-11-01 18:08:42: App [index] with id [0] and pid [10104], exited with code [0] via signal [SIGINT]
+2017-11-01 18:08:42: pid=10104 msg=process killed
+2017-11-01 18:08:42: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-01 18:08:43: App name:index id:0 online
+2017-11-01 18:09:16: Stopping app:index id:0
+2017-11-01 18:09:16: App [index] with id [0] and pid [10123], exited with code [0] via signal [SIGINT]
+2017-11-01 18:09:17: pid=10123 msg=process killed
+2017-11-01 18:09:17: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-01 18:09:17: App name:index id:0 online
+2017-11-01 18:11:50: Stopping app:index id:0
+2017-11-01 18:11:50: App [index] with id [0] and pid [10140], exited with code [0] via signal [SIGINT]
+2017-11-01 18:11:50: pid=10140 msg=process killed
+2017-11-01 18:11:50: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-01 18:11:50: App name:index id:0 online
+2017-11-02 18:41:39: Stopping app:index id:0
+2017-11-02 18:41:39: App [index] with id [0] and pid [10163], exited with code [0] via signal [SIGINT]
+2017-11-02 18:41:39: pid=10163 msg=process killed
+2017-11-02 18:41:39: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 18:41:39: App name:index id:0 online
+2017-11-02 18:55:02: Stopping app:index id:0
+2017-11-02 18:55:02: App [index] with id [0] and pid [10601], exited with code [0] via signal [SIGINT]
+2017-11-02 18:55:02: pid=10601 msg=process killed
+2017-11-02 18:55:02: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 18:55:02: App name:index id:0 online
+2017-11-02 19:25:43: App [index] with id [0] and pid [10622], exited with code [1] via signal [SIGINT]
+2017-11-02 19:25:43: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 19:25:43: App name:index id:0 online
+2017-11-02 19:25:45: App [index] with id [0] and pid [10650], exited with code [1] via signal [SIGINT]
+2017-11-02 19:25:45: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 19:25:45: App name:index id:0 online
+2017-11-02 19:25:55: App [index] with id [0] and pid [10661], exited with code [1] via signal [SIGINT]
+2017-11-02 19:25:55: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 19:25:55: App name:index id:0 online
+2017-11-02 19:25:58: App [index] with id [0] and pid [10672], exited with code [1] via signal [SIGINT]
+2017-11-02 19:25:58: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 19:25:58: App name:index id:0 online
+2017-11-02 19:26:03: App [index] with id [0] and pid [10683], exited with code [1] via signal [SIGINT]
+2017-11-02 19:26:03: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 19:26:03: App name:index id:0 online
+2017-11-02 19:27:18: App [index] with id [0] and pid [10694], exited with code [1] via signal [SIGINT]
+2017-11-02 19:27:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-02 19:27:18: App name:index id:0 online
+2017-11-03 12:16:22: App [index] with id [0] and pid [10706], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:22: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:22: App name:index id:0 online
+2017-11-03 12:16:24: App [index] with id [0] and pid [10963], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:24: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:24: App name:index id:0 online
+2017-11-03 12:16:25: App [index] with id [0] and pid [10974], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:25: App name:index id:0 online
+2017-11-03 12:16:25: App [index] with id [0] and pid [10985], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:25: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:25: App name:index id:0 online
+2017-11-03 12:16:26: App [index] with id [0] and pid [10996], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:26: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:26: App name:index id:0 online
+2017-11-03 12:16:27: App [index] with id [0] and pid [11007], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:27: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:27: App name:index id:0 online
+2017-11-03 12:16:28: App [index] with id [0] and pid [11018], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:28: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:28: App name:index id:0 online
+2017-11-03 12:16:30: App [index] with id [0] and pid [11029], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:30: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:30: App name:index id:0 online
+2017-11-03 12:16:30: App [index] with id [0] and pid [11040], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:30: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:30: App name:index id:0 online
+2017-11-03 12:16:35: App [index] with id [0] and pid [11051], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:35: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:35: App name:index id:0 online
+2017-11-03 12:16:35: App [index] with id [0] and pid [11062], exited with code [1] via signal [SIGINT]
+2017-11-03 12:16:35: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:16:35: App name:index id:0 online
+2017-11-03 12:17:18: App [index] with id [0] and pid [11073], exited with code [1] via signal [SIGINT]
+2017-11-03 12:17:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:17:18: App name:index id:0 online
+2017-11-03 12:17:18: App [index] with id [0] and pid [11084], exited with code [1] via signal [SIGINT]
+2017-11-03 12:17:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:17:18: App name:index id:0 online
+2017-11-03 12:17:36: App [index] with id [0] and pid [11095], exited with code [1] via signal [SIGINT]
+2017-11-03 12:17:36: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:17:36: App name:index id:0 online
+2017-11-03 12:17:36: App [index] with id [0] and pid [11107], exited with code [1] via signal [SIGINT]
+2017-11-03 12:17:37: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:17:37: App name:index id:0 online
+2017-11-03 12:18:53: App [index] with id [0] and pid [11118], exited with code [1] via signal [SIGINT]
+2017-11-03 12:18:53: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:18:53: App name:index id:0 online
+2017-11-03 12:18:54: App [index] with id [0] and pid [11129], exited with code [1] via signal [SIGINT]
+2017-11-03 12:18:54: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:18:54: App name:index id:0 online
+2017-11-03 12:25:07: App [index] with id [0] and pid [11140], exited with code [1] via signal [SIGINT]
+2017-11-03 12:25:07: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 12:25:07: App name:index id:0 online
+2017-11-03 13:20:18: App [index] with id [0] and pid [11155], exited with code [1] via signal [SIGINT]
+2017-11-03 13:20:18: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 13:20:18: App name:index id:0 online
+2017-11-03 13:20:19: App [index] with id [0] and pid [11179], exited with code [1] via signal [SIGINT]
+2017-11-03 13:20:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 13:20:19: App name:index id:0 online
+2017-11-03 14:12:54: App [index] with id [0] and pid [11190], exited with code [1] via signal [SIGINT]
+2017-11-03 14:12:54: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:12:54: App name:index id:0 online
+2017-11-03 14:13:37: App [index] with id [0] and pid [11218], exited with code [1] via signal [SIGINT]
+2017-11-03 14:13:37: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:13:37: App name:index id:0 online
+2017-11-03 14:15:32: App [index] with id [0] and pid [11229], exited with code [1] via signal [SIGINT]
+2017-11-03 14:15:32: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:15:32: App name:index id:0 online
+2017-11-03 14:15:46: App [index] with id [0] and pid [11241], exited with code [1] via signal [SIGINT]
+2017-11-03 14:15:46: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:15:46: App name:index id:0 online
+2017-11-03 14:15:51: App [index] with id [0] and pid [11252], exited with code [1] via signal [SIGINT]
+2017-11-03 14:15:51: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:15:51: App name:index id:0 online
+2017-11-03 14:16:02: App [index] with id [0] and pid [11263], exited with code [1] via signal [SIGINT]
+2017-11-03 14:16:02: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:16:02: App name:index id:0 online
+2017-11-03 14:16:32: App [index] with id [0] and pid [11274], exited with code [1] via signal [SIGINT]
+2017-11-03 14:16:32: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:16:32: App name:index id:0 online
+2017-11-03 14:18:00: App [index] with id [0] and pid [11285], exited with code [1] via signal [SIGINT]
+2017-11-03 14:18:00: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:18:00: App name:index id:0 online
+2017-11-03 14:21:23: App [index] with id [0] and pid [11296], exited with code [1] via signal [SIGINT]
+2017-11-03 14:21:23: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:21:23: App name:index id:0 online
+2017-11-03 14:22:15: App [index] with id [0] and pid [11307], exited with code [1] via signal [SIGINT]
+2017-11-03 14:22:15: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:22:15: App name:index id:0 online
+2017-11-03 14:23:34: App [index] with id [0] and pid [11318], exited with code [1] via signal [SIGINT]
+2017-11-03 14:23:34: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:23:34: App name:index id:0 online
+2017-11-03 14:24:09: App [index] with id [0] and pid [11329], exited with code [1] via signal [SIGINT]
+2017-11-03 14:24:09: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:24:09: App name:index id:0 online
+2017-11-03 14:25:19: App [index] with id [0] and pid [11340], exited with code [1] via signal [SIGINT]
+2017-11-03 14:25:19: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:25:19: App name:index id:0 online
+2017-11-03 14:32:02: Stopping app:index id:0
+2017-11-03 14:32:02: App [index] with id [0] and pid [11351], exited with code [0] via signal [SIGINT]
+2017-11-03 14:32:02: pid=11351 msg=process killed
+2017-11-03 14:32:02: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 14:32:02: App name:index id:0 online
+2017-11-03 17:30:28: Stopping app:index id:0
+2017-11-03 17:30:28: App [index] with id [0] and pid [11398], exited with code [0] via signal [SIGINT]
+2017-11-03 17:30:28: pid=11398 msg=process killed
+2017-11-03 17:30:28: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 17:30:28: App name:index id:0 online
+2017-11-03 17:37:49: Stopping app:index id:0
+2017-11-03 17:37:49: App [index] with id [0] and pid [11484], exited with code [0] via signal [SIGINT]
+2017-11-03 17:37:49: pid=11484 msg=process killed
+2017-11-03 17:37:49: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 17:37:49: App name:index id:0 online
+2017-11-03 17:39:20: Stopping app:index id:0
+2017-11-03 17:39:20: App [index] with id [0] and pid [11505], exited with code [0] via signal [SIGINT]
+2017-11-03 17:39:20: pid=11505 msg=process killed
+2017-11-03 17:39:20: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 17:39:20: App name:index id:0 online
+2017-11-03 18:31:49: Stopping app:index id:0
+2017-11-03 18:31:49: App [index] with id [0] and pid [11526], exited with code [0] via signal [SIGINT]
+2017-11-03 18:31:49: pid=11526 msg=process killed
+2017-11-03 18:31:49: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-03 18:31:49: App name:index id:0 online
+2017-11-10 17:05:16: Stopping app:index id:0
+2017-11-10 17:05:16: App [index] with id [0] and pid [11561], exited with code [0] via signal [SIGINT]
+2017-11-10 17:05:16: pid=11561 msg=process killed
+2017-11-10 17:05:16: Starting execution sequence in -fork mode- for app name:index id:0
+2017-11-10 17:05:16: App name:index id:0 online

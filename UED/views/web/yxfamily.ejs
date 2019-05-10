@@ -1,0 +1,829 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>秒拍品牌管理</title>
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<h1>YIXIA FAMILY管理</h1>
+		
+
+		
+		<div class="con-cards">
+			
+			<h2>秒仔<span class='add-card'><img src="static/img/add-icon.png" alt=""></span></h2>
+			
+			<!-- ***********申请表************ -->
+				<!-- 修改 -->
+			<% 
+				if(typeof data.miaozai_application_list_mod_data != 'undefined'){ 
+					var miaozai_application_list_mod_data = data.miaozai_application_list_mod_data;
+			%>
+			
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="miaozai_application_list">
+				<input type="hidden" name="mod_id" value="<%=miaozai_application_list_mod_data.id%>">
+				<div class="card-wrapper clearfix template brand-mod-template">
+					<div class="card">
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"  value="<%=miaozai_application_list_mod_data.descr %>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>申请表</label>
+							
+							
+							<% if(!!miaozai_application_list_mod_data.application){ %>
+								<a class="reupload" href="javascript:;"><input type="file" name='application' onchange='miaozai_application_mod_application.innerHTML=this.value'>重传</a>
+								<b id="miaozai_application_mod_application"><%=miaozai_application_list_mod_data.application %></b>
+							<%}else{%>
+								<a class="upload" href="javascript:;"><input type="file" name='application' onchange='miaozai_application_mod_application.innerHTML=this.value'>上传</a>
+								<b id="miaozai_application_mod_application">支持page格式</b>
+							<%}%>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>规范</label>
+							
+							<% if(!!miaozai_application_list_mod_data.standard){ %>
+								<a class="reupload" href="javascript:;"><input type="file" name='standard' onchange='miaozai_application_mod_standard.innerHTML=this.value'>重传</a>
+								<b id="miaozai_application_mod_standard"><%=miaozai_application_list_mod_data.standard %></b>
+							<%}else{%>
+								<a class="upload" href="javascript:;"><input type="file" name='standard' onchange='miaozai_application_mod_standard.innerHTML=this.value'>上传</a>
+								<b id="miaozai_application_mod_standard">支持pdf格式，RGB模式，大小<20M</b>
+							<%}%>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/yxfamily'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+				
+			<% } %>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var miaozai_application_data = data.miaozai_application_data;
+				if(miaozai_application_data.length > 0){ 
+				    for(var i = 0,len=miaozai_application_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="con">
+						<div class="line-box">
+							<label class="txt">描述:</label>
+							<b class="txt"><%=miaozai_application_data[i].descr %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>申请表</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持page格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>规范</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持pdf格式，RGB模式，大小<20M</b>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="tools">
+					<a class="mod" href="?page=miaozai_application_list&act=mod&id=<%=miaozai_application_data[i].id%>"></a>
+				</div>
+			</div>
+			<% }} %>
+			<!-- ***********申请表end************ -->
+			
+			
+			
+			
+			<!-- *********** main ************* -->
+			<!-- 添加 -->
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="content_miaozai_list">
+				<div class="card-wrapper clearfix template content-add-template none">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic1" onchange='miaozai_add_pic1.innerHTML=this.value'>上传</a>
+							<b id='miaozai_add_pic1'>png格式，宽980px，RGB模式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="upload" href="javascript:;"><input type="file" name='pic2' onchange='miaozai_add_pic2.innerHTML=this.value'>上传</a>
+							<b id="miaozai_add_pic2">支持文件夹上传，png格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic3" onchange='miaozai_add_pic3.innerHTML=this.value'>上传</a>
+							<b id="miaozai_add_pic3">支持eps格式，RGB模式</b>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<span class="cancel">取消</span>
+						<input type="submit" class="sure" value="添加">
+					</div>
+				</div>
+			</form>
+				
+			<!-- 修改 -->
+			<% 
+				if(typeof data.content_miaozai_list_mod_data != 'undefined'){ 
+					var content_miaozai_list_mod_data = data.content_miaozai_list_mod_data;
+			%>
+			
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="content_miaozai_list">
+				<input type="hidden" name="mod_id" value="<%=content_miaozai_list_mod_data.id%>">
+				<div class="card-wrapper clearfix template brand-mod-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=content_miaozai_list_mod_data.title %>"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"  value="<%=content_miaozai_list_mod_data.descr %>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic1' onchange='miaozai_mod_pic1.innerHTML=this.value'>重传</a>
+							<b id='miaozai_mod_pic1' ><%=content_miaozai_list_mod_data.pic1 %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic2' onchange='miaozai_mod_pic2.innerHTML=this.value'>重传</a>
+							<b id="miaozai_mod_pic2"><%=content_miaozai_list_mod_data.pic2 %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic3' onchange='miaozai_mod_pic3.innerHTML=this.value'>重传</a>
+							<b id="miaozai_mod_pic3"><%=content_miaozai_list_mod_data.pic3 %></b>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/yxfamily'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+				
+			<% } %>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var content_miaozai_data = data.content_miaozai_data;
+				if(content_miaozai_data.length > 0){ 
+				    for(var i = 0,len=content_miaozai_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="con">
+					
+						<div class="line-box">
+							<label class="txt">标题:</label>
+							<b class="txt"><%=content_miaozai_data[i].title %></b>
+						</div>
+						<div class="line-box">
+							<label class="txt">描述:</label>
+							<b class="txt"><%=content_miaozai_data[i].descr %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>png格式，宽980px，RGB模式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持文件夹上传，png格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持eps格式，RGB模式</b>
+						</div>
+					</div>
+					<div class="preview">
+						<img src="<%=content_miaozai_data[i].pic1 %>" alt="">
+					</div>
+				
+				</div>
+				
+				<div class="tools">
+					<a class="mod" href="?page=content_miaozai_list&act=mod&id=<%=content_miaozai_data[i].id%>"></a>
+					<a class="del" href="?page=content_miaozai_list&act=del&id=<%=content_miaozai_data[i].id%>"></a>
+				</div>
+			</div>
+			<% }} %>
+			<!-- *********** main end ************* -->
+			
+		</div>
+		
+		
+		
+		
+		
+		<div class="con-cards">
+			
+			<h2>小咖君<span class='add-card'><img src="static/img/add-icon.png" alt=""></span></h2>
+			
+			<!-- ***********申请表************ -->
+				<!-- 修改 -->
+			<% 
+				if(typeof data.xiaoka_application_list_mod_data != 'undefined'){ 
+					var xiaoka_application_list_mod_data = data.xiaoka_application_list_mod_data;
+			%>
+			
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="xiaoka_application_list">
+				<input type="hidden" name="mod_id" value="<%=xiaoka_application_list_mod_data.id%>">
+				<div class="card-wrapper clearfix template brand-mod-template">
+					<div class="card">
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"  value="<%=xiaoka_application_list_mod_data.descr %>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>申请表</label>
+							
+							<% if(!!xiaoka_application_list_mod_data.application){ %>
+								<a class="reupload" href="javascript:;"><input type="file" name='application' onchange='xiaoka_application_mod_application.innerHTML=this.value'>重传</a>
+								<b id="xiaoka_application_mod_application"><%=xiaoka_application_list_mod_data.application%></b>
+							<%}else{%>
+								<a class="upload" href="javascript:;"><input type="file" name='application' onchange='xiaoka_application_mod_application.innerHTML=this.value'>上传</a>
+								<b id="xiaoka_application_mod_application">支持page格式</b>
+								
+							<%}%>
+							
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>规范</label>
+							<% if(!!xiaoka_application_list_mod_data.standard){ %>
+								<a class="reupload" href="javascript:;"><input type="file" name='standard' onchange='xiaoka_application_mod_standard.innerHTML=this.value'>重传</a>
+								<b id="xiaoka_application_mod_standard"><%=xiaoka_application_list_mod_data.standard%></b>
+							<%}else{%>
+								<a class="upload" href="javascript:;"><input type="file" name='standard' onchange='xiaoka_application_mod_standard.innerHTML=this.value'>上传</a>
+								<b id="xiaoka_application_mod_standard">支持pdf格式，RGB模式，大小<20M</b>
+							<%}%>
+							
+							
+							
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/yxfamily'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+				
+			<% } %>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var xiaoka_application_data = data.xiaoka_application_data;
+				if(xiaoka_application_data.length > 0){ 
+				    for(var i = 0,len=xiaoka_application_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="con">
+						<div class="line-box">
+							<label class="txt">描述:</label>
+							<b class="txt"><%=xiaoka_application_data[i].descr %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>申请表</label>
+							
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持page格式</b>
+							
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>规范</label>
+							
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持pdf格式，RGB模式，大小<20M</b>
+							
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="tools">
+					<a class="mod" href="?page=xiaoka_application_list&act=mod&id=<%=xiaoka_application_data[i].id%>"></a>
+				</div>
+			</div>
+			<% }} %>
+			<!-- ***********申请表end************ -->
+			
+			
+			
+			
+			<!-- *********** main ************* -->
+			<!-- 添加 -->
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="content_xiaoka_list">
+				<div class="card-wrapper clearfix template content-add-template none">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic1" onchange='xiaoka_add_pic1.innerHTML=this.value'>上传</a>
+							<b id='xiaoka_add_pic1'>png格式，宽980px，RGB模式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="upload" href="javascript:;"><input type="file" name='pic2' onchange='xiaoka_add_pic2.innerHTML=this.value'>上传</a>
+							<b id="xiaoka_add_pic2">支持文件夹上传，png格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic3" onchange='xiaoka_add_pic3.innerHTML=this.value'>上传</a>
+							<b id="xiaoka_add_pic3">支持eps格式，RGB模式</b>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<span class="cancel">取消</span>
+						<input type="submit" class="sure" value="添加">
+					</div>
+				</div>
+			</form>
+				
+			<!-- 修改 -->
+			<% 
+				if(typeof data.content_xiaoka_list_mod_data != 'undefined'){ 
+					var content_xiaoka_list_mod_data = data.content_xiaoka_list_mod_data;
+			%>
+			
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="content_xiaoka_list">
+				<input type="hidden" name="mod_id" value="<%=content_xiaoka_list_mod_data.id%>">
+				<div class="card-wrapper clearfix template brand-mod-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=content_xiaoka_list_mod_data.title %>"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"  value="<%=content_xiaoka_list_mod_data.descr %>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic1' onchange='xiaoka_mod_pic1.innerHTML=this.value'>重传</a>
+							<b id='xiaoka_mod_pic1' ><%=content_xiaoka_list_mod_data.pic1 %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic2' onchange='xiaoka_mod_pic2.innerHTML=this.value'>重传</a>
+							<b id="xiaoka_mod_pic2"><%=content_xiaoka_list_mod_data.pic2 %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic3' onchange='xiaoka_mod_pic3.innerHTML=this.value'>重传</a>
+							<b id="xiaoka_mod_pic3"><%=content_xiaoka_list_mod_data.pic3 %></b>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/yxfamily'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+				
+			<% } %>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var content_xiaoka_data = data.content_xiaoka_data;
+				if(content_xiaoka_data.length > 0){ 
+				    for(var i = 0,len=content_xiaoka_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="con">
+					
+						<div class="line-box">
+							<label class="txt">标题:</label>
+							<b class="txt"><%=content_xiaoka_data[i].title %></b>
+						</div>
+						<div class="line-box">
+							<label class="txt">描述:</label>
+							<b class="txt"><%=content_xiaoka_data[i].descr %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>png格式，宽980px，RGB模式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持文件夹上传，png格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持eps格式，RGB模式</b>
+						</div>
+					</div>
+					<div class="preview">
+						<img src="<%=content_xiaoka_data[i].pic1 %>" alt="">
+					</div>
+				
+				</div>
+				
+				<div class="tools">
+					<a class="mod" href="?page=content_xiaoka_list&act=mod&id=<%=content_xiaoka_data[i].id%>"></a>
+					<a class="del" href="?page=content_xiaoka_list&act=del&id=<%=content_xiaoka_data[i].id%>"></a>
+				</div>
+			</div>
+			<% }} %>
+			<!-- *********** main end ************* -->
+			
+		</div>
+		
+		
+		
+		
+		<div class="con-cards">
+			
+			<h2>直播菌<span class='add-card'><img src="static/img/add-icon.png" alt=""></span></h2>
+			
+			<!-- ***********申请表************ -->
+				<!-- 修改 -->
+			<% 
+				if(typeof data.zhibo_application_list_mod_data != 'undefined'){ 
+					var zhibo_application_list_mod_data = data.zhibo_application_list_mod_data;
+			%>
+			
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="zhibo_application_list">
+				<input type="hidden" name="mod_id" value="<%=zhibo_application_list_mod_data.id%>">
+				<div class="card-wrapper clearfix template brand-mod-template">
+					<div class="card">
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"  value="<%=zhibo_application_list_mod_data.descr %>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>申请表</label>
+							
+							<% if(!!zhibo_application_list_mod_data.application){ %>
+								<a class="reupload" href="javascript:;"><input type="file" name='application' onchange='zhibo_application_mod_application.innerHTML=this.value'>上传</a>
+								<b id="zhibo_application_mod_application"><%=zhibo_application_list_mod_data.application%></b>
+							<%}else{%>
+								<a class="upload" href="javascript:;"><input type="file" name='application' onchange='zhibo_application_mod_application.innerHTML=this.value'>上传</a>
+								<b id="zhibo_application_mod_application">支持page格式</b>
+							<%}%>
+							
+							
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>规范</label>
+							<% if(!!zhibo_application_list_mod_data.standard){ %>
+								<a class="reupload" href="javascript:;"><input type="file" name='standard' onchange='zhibo_application_mod_standard.innerHTML=this.value'>重传</a>
+								
+								<b id="zhibo_application_mod_standard"><%=zhibo_application_list_mod_data.standard%></b>
+							<%}else{%>
+								<a class="upload" href="javascript:;"><input type="file" name='standard' onchange='zhibo_application_mod_standard.innerHTML=this.value'>上传</a>
+							
+								<b id="zhibo_application_mod_standard">支持pdf格式，RGB模式，大小<20M</b>
+							<%}%>
+							
+							
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/yxfamily'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+				
+			<% } %>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var zhibo_application_data = data.zhibo_application_data;
+				if(zhibo_application_data.length > 0){ 
+				    for(var i = 0,len=zhibo_application_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="con">
+						<div class="line-box">
+							<label class="txt">描述:</label>
+							<b class="txt"><%=zhibo_application_data[i].descr %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>申请表</label>
+							
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持page格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>规范</label>
+							
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持pdf格式，RGB模式，大小<20M</b>
+							
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="tools">
+					<a class="mod" href="?page=zhibo_application_list&act=mod&id=<%=zhibo_application_data[i].id%>"></a>
+				</div>
+			</div>
+			<% }} %>
+			<!-- ***********申请表end************ -->
+			
+			
+			
+			
+			<!-- *********** main ************* -->
+			<!-- 添加 -->
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="content_zhibo_list">
+				<div class="card-wrapper clearfix template content-add-template none">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic1" onchange='zhibo_add_pic1.innerHTML=this.value'>上传</a>
+							<b id='zhibo_add_pic1'>png格式，宽980px，RGB模式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="upload" href="javascript:;"><input type="file" name='pic2' onchange='zhibo_add_pic2.innerHTML=this.value'>上传</a>
+							<b id="zhibo_add_pic2">支持文件夹上传，png格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="upload" href="javascript:;"><input type="file" name="pic3" onchange='zhibo_add_pic3.innerHTML=this.value'>上传</a>
+							<b id="zhibo_add_pic3">支持eps格式，RGB模式</b>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<span class="cancel">取消</span>
+						<input type="submit" class="sure" value="添加">
+					</div>
+				</div>
+			</form>
+				
+			<!-- 修改 -->
+			<% 
+				if(typeof data.content_zhibo_list_mod_data != 'undefined'){ 
+					var content_zhibo_list_mod_data = data.content_zhibo_list_mod_data;
+			%>
+			
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="content_zhibo_list">
+				<input type="hidden" name="mod_id" value="<%=content_zhibo_list_mod_data.id%>">
+				<div class="card-wrapper clearfix template brand-mod-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=content_zhibo_list_mod_data.title %>"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><input type="text" name="descr"  value="<%=content_zhibo_list_mod_data.descr %>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic1' onchange='zhibo_mod_pic1.innerHTML=this.value'>重传</a>
+							<b id='zhibo_mod_pic1' ><%=content_zhibo_list_mod_data.pic1 %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic2' onchange='zhibo_mod_pic2.innerHTML=this.value'>重传</a>
+							<b id="zhibo_mod_pic2"><%=content_zhibo_list_mod_data.pic2 %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='pic3' onchange='zhibo_mod_pic3.innerHTML=this.value'>重传</a>
+							<b id="zhibo_mod_pic3"><%=content_zhibo_list_mod_data.pic3 %></b>
+						</div>
+					
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/yxfamily'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+				
+			<% } %>
+			
+			
+			<!-- 显示 -->
+			<% 
+				var content_zhibo_data = data.content_zhibo_data;
+				if(content_zhibo_data.length > 0){ 
+				    for(var i = 0,len=content_zhibo_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="con">
+					
+						<div class="line-box">
+							<label class="txt">标题:</label>
+							<b class="txt"><%=content_zhibo_data[i].title %></b>
+						</div>
+						<div class="line-box">
+							<label class="txt">描述:</label>
+							<b class="txt"><%=content_zhibo_data[i].descr %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>预览图</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>png格式，宽980px，RGB模式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>图片</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持文件夹上传，png格式</b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<!-- <a class="upload" href="javascript:;">上传</a> -->
+							<b>支持eps格式，RGB模式</b>
+						</div>
+					</div>
+					<div class="preview">
+						<img src="<%=content_zhibo_data[i].pic1 %>" alt="">
+					</div>
+				
+				</div>
+				
+				<div class="tools">
+					<a class="mod" href="?page=content_zhibo_list&act=mod&id=<%=content_zhibo_data[i].id%>"></a>
+					<a class="del" href="?page=content_zhibo_list&act=del&id=<%=content_zhibo_data[i].id%>"></a>
+				</div>
+			</div>
+			<% }} %>
+			<!-- *********** main end ************* -->
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="del-dialog">
+			<div class="con">
+				<span class="close"><img src="static/img/close-icon.png" alt=""></span>
+				<p><img src="static/img/warn-icon.png" alt=""><b>确定删除此模块？</b></p>
+				<div class="d-btn">确定</div>
+			</div>
+		</div>
+	</div>
+	
+		
+	
+	<script src="static/js/jquery-1.10.2.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		// 如果修改页面保持定位在当前位置
+		window.sessionStorage.yxfamily_scrollTop?document.documentElement.scrollTop = window.sessionStorage.yxfamily_scrollTop : "";
+		
+		$(".add-card").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			
+			template.show();
+			
+			
+		});
+		$(".cancel").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			
+			template.hide();
+			
+			
+		});
+		
+		$(document).delegate(".del","click",function(e){
+			e = e || window.event; 
+			e.preventDefault();
+			del_link = $(this).attr('href');
+			$(".del-dialog").show();
+			return false
+		});
+		$(".del-dialog .d-btn").click(function () {
+			$(".del-dialog").hide();
+			window.location.href=del_link;
+			del_link = '';
+		});
+		$(".close").click(function(){
+			$(this).closest(".del-dialog").hide();
+		});
+		
+		$(document).delegate(".mod,.cancel,.sure","click",function(e){
+			var _top = document.documentElement.scrollTop || document.body.scrollTop;
+			window.sessionStorage.setItem("yxfamily_scrollTop", _top);
+		});
+		
+	});
+		
+	</script>
+</body>
+</html>

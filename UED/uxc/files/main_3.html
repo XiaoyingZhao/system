@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一下品牌</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="../js/angular.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body ng-app='main3-app' ng-controller='main3-controller'>
+		<div class="wrap" style='margin-bottom:160px;'>
+			<section>
+				<div class="main1_section1_title">
+					<h1 ng-bind='name'></h1>
+					<span><i ng-bind='log_name'></i> <i ng-bind='icon'></i> <i ng-bind='log_time'></i></span>
+				</div>
+				<div class='main3_title_descr' id='main3_stand'>
+					<div class="main3_descr_left">
+						<p ng-bind='descr'></p>
+					</div>
+					<div class="main3_descr_right">
+						<a ng-href='{{apply}}' class="preview_btn apply_btn">使用申请表</a>
+						<a ng-href="{{standard}}" class="download_btn norm_btn">秒仔规范</a>
+					</div>
+				</div>
+				<ul class="main3_list" >
+					<li ng-repeat='item in con_list' repeat-finish="repeatDone();">
+						<div class="main3_imgwrap">
+							<img ng-src="{{item.pic1}}" />
+						</div>
+						<div class='main3_img_descr'>
+							<div class="main3_img_left">
+								<p class="main3_tit" ng-bind='item.title'></p>
+							</div>
+							<div class="main3_img_right">
+								<a ng-href="{{item.pic2}}" class="download_btn">下载图片</a>
+								<a ng-href='{{item.pic3}}' class="preview_btn">下载源文件</a>
+							</div>
+					   </div>
+					</li>
+				</ul>
+		     </section>
+		 </div>
+		
+		<ul class="main3_bottom">
+			<li> 
+				<div ng-click='lastFun()'>
+					<i class="fa fa-arrow-left nowpage"></i>
+				    <span class="main3_last nowpage">上一项</span>
+				</div>
+				<span class="main3_last_name nowpage" ng-bind='page_last'></span>
+			</li>
+			<li> 
+				<span class="main3_next_name" ng-bind='page_next'></span>
+				<div ng-click='nextFun()'>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			var app=angular.module('main3-app',[]);
+			//判断循环完毕
+			app.directive('repeatFinish',function(){
+			    return {
+			        link: function(scope,element,attr){
+			            if(scope.$last == true){
+			                scope.$eval( attr.repeatFinish );
+			            }
+			        }
+			    }
+			});
+			app.controller('main3-controller',['$scope',function($scope){
+				$.ajax({
+					type:"get",
+					url:"http://uxc.yixia.com/guifan/api/yxfamily_json",
+					dataType:'jsonp',
+					success:function(data){
+						var data=data.result;
+						console.log(data)
+					    var i=0;
+						if($.cookie('left_page')){
+							var page_num=parseInt($.cookie('left_page'));
+							console.log(typeof(page_num));
+							pageChange(page_num);
+							$.cookie('left_page', '', { expires: -1 });
+						}else{
+							pageChange(0);
+						}
+						//点击上一页，下一页
+						$scope.lastFun=function(){
+							$('.fa-arrow-left').removeClass('nowpage');
+							$('.main3_last').removeClass('nowpage');
+							$('.main3_last_name').removeClass('nowpage');
+							$('.fa-arrow-right').removeClass('nowpage');
+							$('.main3_next').removeClass('nowpage');
+							$('.main3_next_name').removeClass('nowpage');
+							i--;
+							if(i<=0){
+								i=0;
+								pageChange(i);
+								$scope.page_last='无';
+								$('.fa-arrow-left').addClass('nowpage');
+								$('.main3_last').addClass('nowpage');
+								$('.main3_last_name').addClass('nowpage');
+							}
+							pageChange(i);
+							$.cookie('page',i);
+							window.parent.frames.leftFrame.location.reload();
+						}
+						$scope.nextFun=function(){
+							$('.fa-arrow-right').removeClass('nowpage');
+							$('.main3_next').removeClass('nowpage');
+							$('.main3_next_name').removeClass('nowpage');
+							$('.fa-arrow-left').removeClass('nowpage');
+							$('.main3_last').removeClass('nowpage');
+							$('.main3_last_name').removeClass('nowpage');
+							i++;
+							if(i>=2){
+								i=2;
+								pageChange(i);
+								$scope.page_next='无';
+								$('.fa-arrow-right').addClass('nowpage');
+								$('.main3_next').addClass('nowpage');
+								$('.main3_next_name').addClass('nowpage');
+							}
+							pageChange(i);
+							$.cookie('page',i);
+							window.parent.frames.leftFrame.location.reload();
+						}
+						//页面切换函数
+						function pageChange(page){							
+							var page_name=data[page];
+							console.log(page_name)
+							var name_applic=page_name[0][0];
+							var name_con=page_name[1];
+							var name_log=page_name[2][0];
+							console.log(name_con)
+							$scope.icon='/';
+							$scope.log_name=name_log.name;
+							$scope.log_time=name_log.time.substring(0,10);
+							$scope.name=name_applic.name;
+							$scope.descr=name_applic.descr;
+							$scope.apply=name_applic.application;
+							$scope.standard=name_applic.standard;
+							$scope.con_list=name_con;
+							if(page>0){
+								$scope.page_last=data[page-1][0][0].name;
+							}else{
+								$scope.page_last='无';
+							}
+							if(page<2){
+								$scope.page_next=data[page+1][0][0].name;
+							}else{
+								$scope.page_next='无';
+							}
+						}
+						$scope.$apply();
+					}
+				});
+				//控制点击左侧侧边栏跳转到相应锚点
+				$scope.repeatDone = function(){
+			        setTimeout(function(){
+			        		var reg=/表情/gi;
+			        		var reg1=/三视图/gi;
+				        for(var i=0;i<$('.main3_tit').length;i++){
+					       if(reg.test($('.main3_tit').eq(i).html())){
+					         var add_id=i;
+					         $('.main3_tit').eq(add_id).parents('li').attr('id','face');
+				           }else if(reg1.test($('.main3_tit').eq(i).html())){
+				           	 var add_id1=i;
+				           	 $('.main3_tit').eq(add_id1).parents('li').attr('id','three_view');
+				           }
+					    }
+			        },500)
+			    }
+				}])
+			
+		</script>
+	</body>
+</html>

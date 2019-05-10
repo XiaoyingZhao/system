@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图标</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap" style="margin-bottom: 160px;">
+			<section id='icon_ele'>
+				<div class="main1_section1_title">
+					<h1>要素</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="icon_list">
+		        	   <li>1.品牌传递，有趣好玩</li>
+		        	   <li>2.表意明确，识别性强</li>
+		        	   <li>3.情感传递，灵动活泼</li>
+		        </ul>
+			</section>
+			<section id='icon_style'>
+				<div class="main1_section1_title">
+					<h1>风格</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="icon_list">
+		        	   <li>1.非封闭式线性图标</li>
+		        	   <li>2.线性彩色图标（类MBE）</li>
+		        	   <li>3.面性图标（带底板）</li>
+		        	   <li>4.弥散阴影</li>
+		        </ul>
+			</section>
+			<section id='icon_grid'>
+				<div class="main1_section1_title">
+					<h1>栅格</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="icon_list">
+		        	   <li>1.圆形视觉张力较小，所以撑满整个栅格。</li>
+		        	   <li>2.方形图标视觉张力较大，所以适当缩小面积。</li>
+		        	   <li>3.竖版图标一般上下撑满栅格，左右留出间距间距根据视觉比例调整。</li>
+		        	   <li>4.横版图标一般左右撑满栅格，上下留出间距（间距根据视觉比例调整）</li>
+		        </ul>
+		        <div class="grid_img">
+		        	    <img src="../img/grid.png" />
+		        </div>
+			</section>
+			<section id='icon_size'>
+				<div class="main1_section1_title">
+					<h1>尺寸</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="size_listImg">
+		        	    <li>
+		        	    	    <img src="../img/standard_grid.png" />
+		        	    </li>
+		        	    <li>
+		        	    	    <img src="../img/back_grid.png" />
+		        	    </li>
+		        </ul>
+			</section>
+			<section id='icon_status'>
+				<div class="main1_section1_title">
+					<h1>状态</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="status_listImg">
+		        	    <li>
+		        	    	    <img src="../img/status.png" />
+		        	    </li>
+		        </ul>
+			</section>
+		</div>
+		<ul class="main3_bottom">
+			<li class="click_last"> 
+				<div>
+					<i class="fa fa-arrow-left"></i>
+				    <span class="main3_last">上一项</span>
+				</div>
+				<span class="main3_last_name">标准字</span>
+			</li>
+			<li class="click_event"> 
+				<span class="main3_next_name">按钮</span>
+				<div>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			$(function(){
+			 $('.click_event').click(function(){
+				window.parent.frames.mainFrame.location.href='main_4_button.html';
+				$.cookie('page_client',4);
+				window.parent.frames.leftFrame.location.reload();
+			  })
+			 $('.click_last').click(function(){
+			 	window.parent.frames.mainFrame.location.href='main_4_font.html';
+				$.cookie('page_client',2);
+				window.parent.frames.leftFrame.location.reload();
+			 })
+			})
+		</script>
+	</body>
+</html>

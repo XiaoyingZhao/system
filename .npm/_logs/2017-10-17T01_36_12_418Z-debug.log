@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/node-v8.7.0-linux-x64/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@5.4.2
+3 info using node@v8.7.0
+4 verbose stack Error: missing script: start
+4 verbose stack     at run (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/lib/run-script.js:151:19)
+4 verbose stack     at /usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/lib/run-script.js:61:5
+4 verbose stack     at /usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/node_modules/read-package-json/read-json.js:115:5
+4 verbose stack     at /usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/node_modules/read-package-json/read-json.js:402:5
+4 verbose stack     at checkBinReferences_ (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/node_modules/read-package-json/read-json.js:357:45)
+4 verbose stack     at final (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/node_modules/read-package-json/read-json.js:400:3)
+4 verbose stack     at then (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/node_modules/read-package-json/read-json.js:160:5)
+4 verbose stack     at ReadFileContext.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/node_modules/read-package-json/read-json.js:332:20)
+4 verbose stack     at ReadFileContext.callback (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16)
+4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:421:13)
+5 verbose cwd /root/UED
+6 verbose Linux 2.6.32-642.el6.x86_64
+7 verbose argv "/usr/local/node-v8.7.0-linux-x64/bin/node" "/usr/local/bin/npm" "start"
+8 verbose node v8.7.0
+9 verbose npm  v5.4.2
+10 error missing script: start
+11 verbose exit [ 1, true ]

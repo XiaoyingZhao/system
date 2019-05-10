@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图标库</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap" style="margin-bottom: 160px;">
+			<ul class="iconLib_list">
+				<li>
+					<img src='../img/UI KIT.png' alt="" />
+					<p class="icon_title">秒拍UI KIT V1.1.0</p>
+					<p class="icon_time"><span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span></p>
+					<a href="#" class="download_sketch">下载sketch源文件</a>
+				</li>
+				<li>
+					<img src='../img/UI KIT.png' alt="" />
+					<p class="icon_title">秒拍UI KIT V1.1.0</p>
+					<p class="icon_time"><span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span></p>
+					<a href="#" class="download_sketch">下载sketch源文件</a>
+				</li>
+				<li>
+					<img src='../img/UI KIT.png' alt="" />
+					<p class="icon_title">秒拍UI KIT V1.1.0</p>
+					<p class="icon_time"><span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span></p>
+					<a href="#" class="download_sketch">下载sketch源文件</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="main3_bottom">
+			<li class="click_last"> 
+				<div>
+					<i class="fa fa-arrow-left"></i>
+				    <span class="main3_last">上一项</span>
+				</div>
+				<span class="main3_last_name">切图命名规范</span>
+			</li>
+			<li class="click_event"> 
+				<span class="main3_next_name">版本</span>
+				<div>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			$(function(){
+			 $('.click_event').click(function(){
+				window.parent.frames.mainFrame.location.href='main_4_version.html';
+				$.cookie('page_client',10);
+				window.parent.frames.leftFrame.location.reload();
+			  })
+			 $('.click_last').click(function(){
+			 	window.parent.frames.mainFrame.location.href='main_4_cut.html';
+				$.cookie('page_client',8);
+				window.parent.frames.leftFrame.location.reload();
+			 })
+			})
+		</script>
+	</body>
+</html>
+

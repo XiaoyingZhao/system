@@ -1,0 +1,2436 @@
+Tue, 17 Oct 2017 07:09:43 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+user is not defined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:25)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:17:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+ReferenceError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+user is not defined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:25)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:17:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+ReferenceError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+user is not defined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:25)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:17:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+ReferenceError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+user is not defined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:25)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:17:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+ReferenceError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+user is not defined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:25)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:17:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+Tue, 17 Oct 2017 08:54:08 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Tue, 17 Oct 2017 08:54:40 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:18:7)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * from admin_list WHERE username = ' }
+Tue, 17 Oct 2017 08:55:26 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Tue, 17 Oct 2017 09:01:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:23:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+Tue, 17 Oct 2017 09:02:02 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Tue, 17 Oct 2017 09:04:40 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Tue, 17 Oct 2017 09:07:53 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+ReferenceError: brand is not defined
+    at /root/UED/routers/api/json.js:89:16
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+Tue, 17 Oct 2017 10:16:00 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 18 Oct 2017 03:53:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 18 Oct 2017 03:55:16 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:16 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:16 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:17 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:17 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:17 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:17 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:20 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:20 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:55:20 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:10 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:11 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:11 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:11 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:12 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:12 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:12 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:12 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:13 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:13 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:13 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:14 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:14 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:14 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:14 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:15 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: router is not defined
+    at Object.<anonymous> (/root/UED/index.js:86:1)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Object.<anonymous> (/usr/local/node-v8.7.0-linux-x64/lib/node_modules/pm2/lib/ProcessContainerFork.js:70:21)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+    at tryModuleLoad (module.js:508:12)
+    at Function.Module._load (module.js:500:3)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Wed, 18 Oct 2017 03:56:20 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 18 Oct 2017 03:56:32 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 18 Oct 2017 09:35:56 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 18 Oct 2017 10:34:46 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 25 Oct 2017 10:07:03 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 25 Oct 2017 10:07:34 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.post (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'ee\' ' }
+Thu, 26 Oct 2017 02:53:07 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:97:16)
+    at Object.md5 (/root/UED/libs/common.js:7:7)
+    at router.get (/root/UED/routers/api/json.js:133:24)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:136:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'12\' ' }
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:136:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zhaoxiaoying\' ' }
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:136:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zxy\' ' }
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:136:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zxy\' ' }
+Thu, 26 Oct 2017 02:57:59 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:137:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zxy\' ' }
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:137:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zxy\' ' }
+Thu, 26 Oct 2017 02:58:46 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zxy\' ' }
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zhaoxiaoying\' ' }
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'ss\' ' }
+Thu, 26 Oct 2017 11:59:25 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 26 Oct 2017 11:59:39 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zhaoxiaoying\' ' }
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/root/UED/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/root/UED/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.jsonp (/root/UED/node_modules/express/lib/response.js:324:15)
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:138:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:90:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+Thu, 26 Oct 2017 11:59:40 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 26 Oct 2017 12:00:32 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 26 Oct 2017 12:00:36 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zhaoxiaoying\' ' }
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/root/UED/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.jsonp (/root/UED/node_modules/express/lib/response.js:296:10)
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:139:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:90:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+Thu, 26 Oct 2017 12:00:38 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zhaoxiaoying\' ' }
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/root/UED/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.jsonp (/root/UED/node_modules/express/lib/response.js:296:10)
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:139:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:90:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+Thu, 26 Oct 2017 12:00:39 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 26 Oct 2017 12:01:31 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+{ Error: ER_NO_SUCH_TABLE: Table 'test.admin_list' doesn't exist
+    at Query.Sequence._packetToError (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+    --------------------
+    at Pool.query (/root/UED/node_modules/mysql/lib/Pool.js:199:23)
+    at router.get (/root/UED/routers/api/json.js:135:5)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'test.admin_list\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM admin_list WHERE name=\'zhaoxiaoying\' ' }
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/root/UED/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/root/UED/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.jsonp (/root/UED/node_modules/express/lib/response.js:324:15)
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:139:8)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query.ErrorPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:90:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+Thu, 26 Oct 2017 12:01:33 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 26 Oct 2017 12:02:08 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 26 Oct 2017 12:02:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 01:28:42 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 02:10:20 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 02:13:23 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 03:11:43 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 03:12:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 03:12:27 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 03:23:31 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 03:26:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:23:54 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:33:46 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:34:56 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:35:29 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:36:48 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:43:22 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:48:14 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:50:23 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:52:23 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:53:12 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:53:53 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 27 Oct 2017 09:54:16 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Mon, 30 Oct 2017 01:52:41 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Mon, 30 Oct 2017 01:53:26 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Mon, 30 Oct 2017 01:55:59 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Mon, 30 Oct 2017 01:57:51 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Mon, 30 Oct 2017 01:58:34 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Mon, 30 Oct 2017 01:58:44 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Mon, 30 Oct 2017 02:21:39 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Tue, 31 Oct 2017 03:44:43 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Tue, 31 Oct 2017 10:15:36 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 01 Nov 2017 10:07:25 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 01 Nov 2017 10:08:43 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 01 Nov 2017 10:09:17 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Wed, 01 Nov 2017 10:11:50 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 02 Nov 2017 10:41:39 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Thu, 02 Nov 2017 10:55:03 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Thu, 02 Nov 2017 11:25:43 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Thu, 02 Nov 2017 11:25:45 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Thu, 02 Nov 2017 11:25:55 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Thu, 02 Nov 2017 11:25:58 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Thu, 02 Nov 2017 11:26:04 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:97:16)
+    at Object.md5 (/root/UED/libs/common.js:7:7)
+    at router.get (/root/UED/routers/api/json.js:133:24)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:97:16)
+    at Object.md5 (/root/UED/libs/common.js:7:7)
+    at router.get (/root/UED/routers/api/json.js:133:24)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:97:16)
+    at Object.md5 (/root/UED/libs/common.js:7:7)
+    at router.get (/root/UED/routers/api/json.js:133:24)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Thu, 02 Nov 2017 11:27:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:22 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:24 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:25 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:26 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:26 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:27 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:28 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:30 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:31 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:35 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:16:35 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:17:18 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:17:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:17:36 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:17:37 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:18:53 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:18:54 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 04:25:07 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 05:20:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 05:20:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:12:54 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:13:37 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:97:16)
+    at Object.md5 (/root/UED/libs/common.js:7:7)
+    at router.get (/root/UED/routers/api/json.js:133:24)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:15:32 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:15:46 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:15:51 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:16:02 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:16:32 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:18:00 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:21:23 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:22:15 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:23:35 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:160:15)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:24:09 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+ReferenceError: superadmin is not defined
+    at Query.db.query [as _callback] (/root/UED/routers/api/json.js:175:14)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onread (net.js:587:20)
+Fri, 03 Nov 2017 06:25:19 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 03 Nov 2017 06:32:02 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 03 Nov 2017 09:30:28 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+TypeError: getAllData.updateData.update_log_data is not a function
+    at /root/UED/routers/yixia.js:233:37
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 4): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 5): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 6): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 7): TypeError: getAllData.updateData.update_log_data is not a function
+TypeError: Cannot read property 'originalname' of undefined
+    at router.post (/root/UED/routers/yixia.js:216:41)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at router.use (/root/UED/routers/admin.js:29:3)
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 8): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 9): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 10): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 11): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 12): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 13): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 14): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 15): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 16): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 17): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 18): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 19): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11484) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 20): TypeError: getAllData.updateData.update_log_data is not a function
+Fri, 03 Nov 2017 09:37:50 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+Fri, 03 Nov 2017 09:39:20 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+TypeError: getAllData.updateData.update_log_data is not a function
+    at /root/UED/routers/yixia.js:272:37
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 4): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 5): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 6): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 7): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 8): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 9): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 10): TypeError: getAllData.updateData.update_log_data is not a function
+(node:11526) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 11): TypeError: getAllData.updateData.update_log_data is not a function
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:97:16)
+    at Object.md5 (/root/UED/libs/common.js:7:7)
+    at router.get (/root/UED/routers/api/json.js:207:24)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/UED/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/UED/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at /root/UED/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/UED/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/UED/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/UED/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/UED/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/UED/node_modules/express/lib/router/index.js:317:13)
+    at /root/UED/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/UED/node_modules/express/lib/router/index.js:335:12)
+Fri, 03 Nov 2017 10:31:49 GMT body-parser deprecated undefined extended: provide extended option at index.js:20:23
+Fri, 10 Nov 2017 09:05:16 GMT body-parser deprecated undefined extended: provide extended option at index.js:18:23
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)
+TypeError: /root/UED/views/web/nav.ejs:16
+    14| 	<div class="nick-wrap">
+    15| 		<img src="static/img/admin-icon.png" alt="">
+ >> 16| 		<b><%=user.name%></b>
+    17| 	</div>
+    18| 	<div class="menu">
+    19| 		<!-- <div class="menu-list">
+
+Cannot read property 'name' of undefined
+    at eval (eval at compile (/root/UED/node_modules/ejs/lib/ejs.js:549:12), <anonymous>:11:30)
+    at returnedFn (/root/UED/node_modules/ejs/lib/ejs.js:580:17)
+    at tryHandleCache (/root/UED/node_modules/ejs/lib/ejs.js:223:34)
+    at View.exports.renderFile [as engine] (/root/UED/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/root/UED/node_modules/express/lib/view.js:127:8)
+    at tryRender (/root/UED/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/UED/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/UED/node_modules/express/lib/response.js:971:7)
+    at Query.db.query [as _callback] (/root/UED/routers/nav.js:22:10)
+    at Query.Sequence.end (/root/UED/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/UED/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/UED/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/UED/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/UED/node_modules/mysql/lib/Connection.js:103:28)

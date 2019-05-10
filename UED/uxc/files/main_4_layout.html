@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>布局</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap" style="margin-bottom: 160px;">
+			<section id='layout_1'>
+				<div class="main1_section1_title">
+					<h1>基础布局</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="button_listImg">
+		        	    <li>
+		        	    	    <img src="../img/button_img1.png" />
+		        	    </li>
+		        </ul>
+			</section>
+			<section id='layout_2'>
+				<div class="main1_section1_title">
+					<h1>模块间距</h1>
+					<span><i>2017年</i> <i>/</i> <i>by hanliwen</i></span>
+		        </div>
+		        <ul class="button_listImg">
+		        	    <li>
+		        	    	    <img src="../img/button_img2.png" />
+		        	    </li>
+		        </ul>
+			</section>
+		</div>
+		<ul class="main3_bottom">
+			<li class="click_last"> 
+				<div>
+					<i class="fa fa-arrow-left"></i>
+				    <span class="main3_last">上一项</span>
+				</div>
+				<span class="main3_last_name">模块</span>
+			</li>
+			<li class="click_event"> 
+				<span class="main3_next_name">切图命名规范</span>
+				<div>
+					<span class="main3_next">下一项</span>
+				    <i class="fa fa-arrow-right"></i>
+				</div>
+			</li>
+		</ul>
+		<script>
+			$(function(){
+			 $('.click_event').click(function(){
+				window.parent.frames.mainFrame.location.href='main_4_cut.html';
+				$.cookie('page_client',8);
+				window.parent.frames.leftFrame.location.reload();
+			  })
+			 $('.click_last').click(function(){
+			 	window.parent.frames.mainFrame.location.href='main_4_module.html';
+				$.cookie('page_client',6);
+				window.parent.frames.leftFrame.location.reload();
+			 })
+			})
+		</script>
+	</body>
+</html>

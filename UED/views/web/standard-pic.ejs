@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>秒拍客户端管理</title>
+	<link rel="stylesheet" href="../static/css/reset.css">
+	<link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>秒拍客户端管理</h1>
+		
+		<div class="con-cards clearfix">
+			<h2>切图命名规范</h2>
+			
+			
+			
+			<!-- 修改(5) -->
+			<% 
+				if(typeof data.standard_pic5_mod_data != 'undefined'){ 
+					var standard_pic5_mod_data = data.standard_pic5_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="5">
+				<input type="hidden" name="mod_id" value="<%=standard_pic5_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=standard_pic5_mod_data.title%>"></b>
+							
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/standard-pic'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			<!-- 二级列表-添加-修改 -->
+				<!-- 添加 -->
+					<form action="?" method='post' enctype="multipart/form-data">
+						<input type="hidden" name="page_id" value="miaopaiapp_second_list">
+						<div class="card-wrapper2 clearfix template miaopaiapp-add-template none">
+							<div class="card">
+								<div class="line-box">
+									<label>全称</label>
+									<b><input type="text" name="content1"></b>
+								</div>
+								<div class="gap"></div>
+								<div class="line-box">
+									<label>简写</label>
+									<b><input type="text" name="content2"></b>
+								</div>
+								<div class="gap"></div>
+								<div class="line-box">
+									<label>中文</label>
+									<b><input type="text" name="content3"></b>
+								</div>
+							</div>
+							
+							<div class="btns">
+								<span class="cancel">取消</span>
+								<input type="submit" class="sure" value="添加">
+							</div>
+						</div>
+					</form>
+					
+				<!-- 修改 -->
+					<%	if(typeof data.standard_pic_second_mod_data != 'undefined'){ 
+					var standard_pic_second_mod_data = data.standard_pic_second_mod_data;
+					%>
+				
+					<form action="?" method='post' enctype="multipart/form-data">
+						<input type="hidden" name="page_id" value="miaopaiapp_second_list">
+						<input type="hidden" name="mod_id" value="<%=standard_pic_second_mod_data.id%>">
+						<div class="card-wrapper clearfix template miaopaiapp-add-template" style="height:150px">
+							<div class="card">
+								<div class="line-box">
+									<label>全称</label>
+									<b><input type="text" name="content1" value="<%=standard_pic_second_mod_data.content1%>"></b>
+								</div>
+								<div class="line-box">
+									<label>简写</label>
+									<b><input type="text" name="content2" value="<%=standard_pic_second_mod_data.content2%>"></b>
+								</div>
+								<div class="line-box">
+									<label>中文</label>
+									<b><input type="text" name="content3" value="<%=standard_pic_second_mod_data.content3%>"></b>
+								</div>
+							</div>
+							
+							<div class="btns">
+								<a class="cancel" href='/guifan/admin/miaopaiapp/standard-pic'>取消</a>
+								<input type="submit" class="sure" value="修改">
+							</div>
+						</div>
+					</form>
+					<%}%>
+			<!-- 二级列表-添加-修改end -->
+			
+			
+			
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt" style="width:60px">基础布局:</label>
+						<span style="cursor: pointer; padding-left: 10px" class='add-card-small add-card2' data-upid='9'><img src="../static/img/add-icon.png" alt=""></span>
+					</div>
+					
+					<div class="gap"></div>
+					<!-- 显示 -->
+					<% 
+					var standard_pic_data = data.standard_pic_data;
+					for(var i = 0,len = standard_pic_data.length; i < len; i++){
+						if(standard_pic_data[i].upid == 0){
+						
+					%>
+					
+					<div class="line-box line-box2" >
+						<label class="txt">全称：</label>
+						<b class="txt-content"><%=standard_pic_data[i].content1 %></b>
+						<label class="txt">简写：</label>
+						<b class="txt-content"><%=standard_pic_data[i].content2 %></b>
+						<label class="txt">中文：</label>
+						<b class="txt-content"><%=standard_pic_data[i].content3 %></b>
+						
+						<a class='add-card-small' title="修改二级列表" href="?page=miaopaiapp_second_list&act=mod&id=<%=standard_pic_data[i].id %>"><img src="../static/img/edit1-icon.png" alt=""></a>
+						<a class='add-card-small' title="删除二级列表" href="?page=miaopaiapp_second_list&act=del&id=<%=standard_pic_data[i].id %>"><img src="../static/img/del2-icon.png" alt=""></a>
+					</div>
+					<%}}%>
+					
+				</div>
+			</div>
+				
+		</div>
+		
+		
+		
+		<div class="del-dialog">
+			<div class="con">
+				<span class="close"><img src="../static/img/close-icon.png" alt=""></span>
+				<p><img src="../static/img/warn-icon.png" alt=""><b>确定删除此模块？</b></p>
+				<div class="d-btn">确定</div>
+			</div>
+		</div>
+	</div>
+		<script src="../static/js/jquery-1.10.2.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		// 如果修改页面保持定位在当前位置
+		window.sessionStorage.standard_pic_scrollTop?document.documentElement.scrollTop = window.sessionStorage.standard_pic_scrollTop : "";
+		
+		$(".add-card").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			template.show();
+		});
+		
+		$(".add-card2").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper2.template");
+			
+			var upid = $(this).attr("data-id");
+			console.log($(this).closest(".con-cards").find("input[name=upid]"))
+			$(this).closest(".con-cards").find("input[name=upid]").val(upid);
+			
+			template.show();
+		});
+		
+		$(".cancel").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			var template2 = $(this).closest(".con-cards").find(".card-wrapper2.template");
+			
+			template.hide();
+			template2.hide();
+			
+			
+		});
+		
+		$(document).delegate(".del","click",function(e){
+			e = e || window.event; 
+			e.preventDefault();
+			del_link = $(this).attr('href');
+			$(".del-dialog").show();
+			return false
+		});
+		$(".del-dialog .d-btn").click(function () {
+			$(".del-dialog").hide();
+			window.location.href=del_link;
+			del_link = '';
+		});
+		$(".close").click(function(){
+			$(this).closest(".del-dialog").hide();
+		});
+		
+		$(document).delegate(".mod,.cancel,.sure","click",function(e){
+			var _top = document.documentElement.scrollTop || document.body.scrollTop;
+			window.sessionStorage.setItem("miaopai_scrollTop", _top);
+		});
+		
+	});
+		
+	</script>
+</body>
+</html>

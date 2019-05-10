@@ -1,0 +1,51 @@
+body{
+    font: 14px PingFangSC-regular, "Microsoft YaHei", "\u5FAE\u8F6F\u96C5\u9ED1", "SimSun", "\u5B8B\u4F53", "Arial";
+}
+h1{
+	color:#D8D8D8;
+	font-size:20px;
+	text-align: center;
+	padding-top:23px;
+	font-family: PingFangSC-medium;
+}
+.head-icon{
+	width:80px;
+	height:80px;
+	border-radius: 100px;
+	background: #D8D8D8;
+	margin: 39px auto 0;
+}
+.nick-wrap{
+	text-align: center;
+	padding-top: 10.6px;
+}
+.nick-wrap img{
+	vertical-align: middle;
+}
+.nick-wrap b{
+	color: #333;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.menu{
+	padding-left:40px;
+	padding-top:70px;
+}
+.menu-list{
+	cursor: pointer;
+}
+.menu-list b{
+	font-size: 14px;
+	color:#333;
+	line-height: 35px;
+}
+.menu-list.on b,.menu-list.on b.small-nav{
+	color: #00A6F5;
+}
+.menu-list b.small-nav{
+    padding-left: 20px;
+    display: block;
+    line-height: 25px;
+    font-size: 12px;
+    color: #97979c;
+}

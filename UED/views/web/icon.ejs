@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>秒拍客户端管理</title>
+	<link rel="stylesheet" href="../static/css/reset.css">
+	<link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>秒拍客户端管理</h1>
+		
+		<div class="con-cards clearfix">
+			<h2>图标</h2>
+			
+			<!-- 修改(1,2) -->
+			<% 
+				if(typeof data.icon1_mod_data != 'undefined'){ 
+					var icon1_mod_data = data.icon1_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="1">
+				<input type="hidden" name="mod_id" value="<%=icon1_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=icon1_mod_data.title%>"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><textarea name="descr"><%=icon1_mod_data.descr%></textarea></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/icon'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(1,2) -->
+			<% 
+				var icon_data = data.icon_data;
+				if(icon_data.length > 0){ 
+				    for(var i = 0,len=icon_data.length; i<len; i++){
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=icon_data[i].title %></b>
+					</div>
+					<div class="line-box">
+						<label class="txt">描述:</label>
+						<b class="txt"><%=icon_data[i].descr %></b>
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=1&act=mod&id=<%=icon_data[i].id %>"></a>
+					<a class="del" href="?page=1&act=del&id=<%=icon_data[i].id %>"></a>
+				</div>
+			</div>
+			<% }} %>
+			
+			<!-- 修改(3) -->
+			<% 
+				if(typeof data.icon3_mod_data != 'undefined'){ 
+					var icon3_mod_data = data.icon3_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="3">
+				<input type="hidden" name="mod_id" value="<%=icon3_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=icon3_mod_data.title%>"></b>
+						</div>
+						<div class="line-box">
+							<label>描述</label>
+							<b><textarea name="descr"><%=icon3_mod_data.descr%></textarea></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='icon3_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="icon3_mod_img1"><%=icon3_mod_data.img1 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/icon'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(3) -->
+			<% 
+				var icon3_data = data.icon3_data[0];
+				
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=icon3_data.title %></b>
+					</div>
+					<div class="line-box">
+						<label class="txt">描述:</label>
+						<b class="txt"><%=icon3_data.descr %></b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt"></label>
+						<b>png格式，宽度1160px，RGB模式</b>
+						
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=3&act=mod&id=<%=icon3_data.id %>"></a>
+					<a class="del" href="?page=3&act=del&id=<%=icon3_data.id %>"></a>
+				</div>
+			</div>
+			
+			
+			<!-- 修改(4) -->
+			<% 
+				if(typeof data.icon4_mod_data != 'undefined'){ 
+					var icon4_mod_data = data.icon4_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="4">
+				<input type="hidden" name="mod_id" value="<%=icon4_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=icon4_mod_data.title%>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='icon4_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="icon4_mod_img1"><%=icon4_mod_data.img1 %></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img2' onchange='icon4_mod_img2.innerHTML=this.value'>重传</a>
+							<b id="icon4_mod_img2"><%=icon4_mod_data.img2 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/icon'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(4) -->
+			<% 
+				var icon4_data = data.icon4_data[0];
+				
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=icon4_data.title %></b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt"></label>
+						<b>png格式，宽度1160px，RGB模式</b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt"></label>
+						<b>png格式，宽度1160px，RGB模式</b>
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=4&act=mod&id=<%=icon4_data.id %>"></a>
+					<a class="del" href="?page=4&act=del&id=<%=icon4_data.id %>"></a>
+				</div>
+			</div>
+			
+			<!-- 修改(5) -->
+			<% 
+				if(typeof data.icon5_mod_data != 'undefined'){ 
+					var icon5_mod_data = data.icon5_mod_data;
+			%>
+			<form action="?" method='post' enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="5">
+				<input type="hidden" name="mod_id" value="<%=icon5_mod_data.id%>">
+				<div class="card-wrapper clearfix template miaopaiapp-add-template">
+					<div class="card">
+						<div class="line-box">
+							<label>标题</label>
+							<b><input type="text" name="title" value="<%=icon5_mod_data.title%>"></b>
+						</div>
+						<div class="gap"></div>
+						<div class="line-box">
+							<label>源文件</label>
+							<a class="reupload" href="javascript:;"><input type="file" name='img1' onchange='icon5_mod_img1.innerHTML=this.value'>重传</a>
+							<b id="icon5_mod_img1"><%=icon5_mod_data.img1 %></b>
+						</div>
+					</div>
+					
+					<div class="btns">
+						<a class="cancel" href='/guifan/admin/miaopaiapp/icon'>取消</a>
+						<input type="submit" class="sure" value="修改">
+					</div>
+				</div>
+			</form>
+			<%}%>
+			
+			<!-- 显示(5) -->
+			<% 
+				var icon5_data = data.icon5_data[0];
+				
+			%>
+			<div class="card-wrapper clearfix">
+				<div class="card">
+					<div class="line-box">
+						<label class="txt">标题:</label>
+						<b class="txt"><%=icon5_data.title %></b>
+					</div>
+					<div class="gap"></div>
+					<div class="line-box">
+						<label class="txt"></label>
+						<b>png格式，宽度1160px，RGB模式</b>
+					</div>
+				</div>
+				<div class="tools">
+					<a class="mod" href="?page=5&act=mod&id=<%=icon5_data.id %>"></a>
+					<a class="del" href="?page=5&act=del&id=<%=icon5_data.id %>"></a>
+				</div>
+			</div>
+			
+				
+		</div>
+		
+		
+		
+		<div class="del-dialog">
+			<div class="con">
+				<span class="close"><img src="../static/img/close-icon.png" alt=""></span>
+				<p><img src="../static/img/warn-icon.png" alt=""><b>确定删除此模块？</b></p>
+				<div class="d-btn">确定</div>
+			</div>
+		</div>
+	</div>
+		<script src="../static/js/jquery-1.10.2.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		// 如果修改页面保持定位在当前位置
+		window.sessionStorage.icon_scrollTop?document.documentElement.scrollTop = window.sessionStorage.icon_scrollTop : "";
+		
+		$(".add-card").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			
+			template.show();
+			
+			
+		});
+		$(".cancel").click(function(){
+			var template = $(this).closest(".con-cards").find(".card-wrapper.template");
+			
+			template.hide();
+			
+			
+		});
+		
+		$(document).delegate(".del","click",function(e){
+			e = e || window.event; 
+			e.preventDefault();
+			del_link = $(this).attr('href');
+			$(".del-dialog").show();
+			return false
+		});
+		$(".del-dialog .d-btn").click(function () {
+			$(".del-dialog").hide();
+			window.location.href=del_link;
+			del_link = '';
+		});
+		$(".close").click(function(){
+			$(this).closest(".del-dialog").hide();
+		});
+		
+		$(document).delegate(".mod,.cancel,.sure","click",function(e){
+			var _top = document.documentElement.scrollTop || document.body.scrollTop;
+			window.sessionStorage.setItem("miaopai_scrollTop", _top);
+		});
+		
+	});
+		
+	</script>
+</body>
+</html>

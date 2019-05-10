@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>常见问题</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+	</head>
+	<body style="background: #FAFAFA;">
+		<div class="problem_top">
+			<img src="../img/back.png" class="back" />
+			<div class="href_wrap">
+				<a href="#">常见问题</a>
+			    <a href="contact.html">联系我们</a>
+			</div>
+			<ul class="problem_list">
+				<li>
+					<div class="box_1">
+						<span>1.权限安全</span>
+						<i class="fa fa-caret-down"></i>
+					</div>
+				</li>
+				<li>
+					<div class="box_1">
+						<span>2.页面样式问题</span>
+						<i class="fa fa-caret-up retract"></i>
+					</div>
+					<div class="box_2">
+						<h3>页面样式问题： 输入框没有提示、 网页元素位置错乱</h3>
+				        <p>1.请使用Chrome、Firefox、Safari、IE9以上浏览器</p>
+				        <p>2.如已使用上述浏览器，但上述问题仍然存在，请发送邮件至MUED@yixia.com</p>
+					</div>
+				</li>
+				<li>
+					<div class="box_1">
+						<span>3.其他问题</span>
+						<i class="fa fa-caret-up retract"></i>
+					</div>
+					<div class="box_2">
+						<h3>以上未包含的问题，也可联系管理员</h3>
+				        <p>为准确定位问题并尽早解决，请按下述步骤详细描述：</p>
+				        <p>a.您使用什么操作系统，什么浏览器？</p>
+				        <p>b.在哪个页面？（复制地址栏全地址）</p>
+				        <p>c.您依次做了哪些操作？</p>
+				        <p>d.现在遇到了什么问题，页面有什么反馈？（浏览器完整截图）</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			$(function(){
+				//返回上一页
+				$('.back').on('click',function(){
+					history.go(-1);
+				})
+				//控制向上向下按钮
+				$('.retract').on('click',function(){
+					for(var i=0;i<$('.retract').length;i++){
+						$('.retract').eq(i).css('color','#C5C6C6');
+						$(this).css('color','#00A6F5');
+					}
+					if($(this).parent().siblings('div').css('display')=='block'){
+						$(this).parent().siblings('div').css('display','none');
+						$(this).removeClass('fa-caret-up');
+						$(this).addClass('fa-caret-down');
+					}else{
+						$(this).parent().siblings('div').css('display','block');
+						$(this).removeClass('fa-caret-down');
+						$(this).addClass('fa-caret-up');
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

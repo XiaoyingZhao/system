@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="../js/angular.min.js" ></script>
+		<style>
+			.wrap{
+				width:1161px;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body ng-app='main2-app' ng-controller='main2-controller'>
+		<div class="wrap">
+			<section id='main2_section_1'>
+				<div class="main1_section1_title">
+					<h1 ng-bind='name1'></h1>
+					<span><i ng-bind='brand_name'></i> / <i ng-bind='brand_time'></i></span>
+				</div>
+				<div class="main1_big_logo">
+					<img ng-src="{{previewImg1}}" alt='' class="main2_big_logoImg" /> 
+				</div>
+				<div class='main1_visual_book'>
+					<div class="main1_visual_left">
+						<p ng-bind='name2'></p>
+						<span>品牌标识是一下科技企业形象对外输出的核心元素，是体现品牌价值、彰显企业文化要素的重要组成部分，在任何情况下均不得随意更改</span>
+					</div>
+					<div class="main1_visual_right">
+						<a ng-href='{{previewImg2}}' class="download_btn">下载PDF</a>
+					</div>
+				</div>
+			</section>
+			<section id='main2_section_2'>
+				<div class="main1_section1_title">
+					<h1>品牌标识组合</h1>
+					<span><i ng-bind='mix_name'></i> / <i ng-bind='mix_time'></i></span>
+				</div>
+				<ul class="main1_list">
+					<li ng-repeat='item in brand_mix'>
+						<img ng-src="{{item.pic1}}" />
+						<div class="pos_wrap">
+							<a ng-href='{{item.pic2}}' class="download_img">下载图片</a>
+							<a ng-href="{{item.pic3}}" class="download_files">下载源文件</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section id="main2_section_3">
+				<div class="main1_section1_title">
+					<h1>二维码</h1>
+					<span><i ng-bind='ewm_name'></i> / <i ng-bind='ewm_time'></i></span>
+				</div>
+				<ul class="main2_codelist">
+					<li ng-repeat='item in codeArr'>
+						<img ng-src="{{item.pic1}}"  />
+						<p>{{item.title}}</p>
+						<a ng-href="{{item.pic3}}" class="download_files">下载源文件</a>
+						<a ng-href='{{item.pic2}}' class="download_img">下载图片</a>
+					</li>
+				</ul>
+			</section>
+			<section id="main2_section_4">
+				<div class="main1_section1_title">
+					<h1>广告产品规范</h1>
+					<span><i ng-bind='standard_name'></i> / <i ng-bind='standard_time'></i></span>
+				</div>
+				<ul class="main2_advert">
+					<li ng-repeat='item in advertArr'>
+						<p>
+							<span ng-bind='item.title'></span>
+							<i ng-bind='item.descr'></i>
+						</p>
+						<a ng-href='{{item.pic3}}' class="download_img download_attach">下载相关附件</a>
+						<a ng-href="{{item.pic2}}" class="download_files download_pdf">下载PDF文档</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<script>
+			var app=angular.module('main2-app',[]);
+			app.controller('main2-controller',function($scope){
+				$.ajax({
+					type:"get",
+					url:"http://uxc.yixia.com/guifan/api/miaopai_json",
+					dataType:'jsonp',
+					success:function(data){
+						var result=data.result;
+						console.log(result)
+						var main2_brand=result.brand;
+						var content=result.content;
+						var codeArray=[];
+						var advertArray=[];
+						var log=result.log;
+						$scope.icon='/';
+		   	    	    		$scope.brand_name=log.brand.name;
+		   	    	    	    $scope.mix_name=log.brandmix.name;
+		   	    	    	    $scope.mix_time=log.brandmix.time.substring(0,10);
+		   	    	    		$scope.brand_time=log.brand.time.substring(0,10);
+		   	    	    		$scope.ewm_name=log.ewm.name;
+		   	    	    	    $scope.ewm_time=log.ewm.time.substring(0,10);
+		   	    	    	    $scope.standard_name=log.standard.name;
+		   	    	    	    $scope.standard_time=log.standard.time.substring(0,10);
+						$scope.name1=main2_brand.name;
+						$scope.previewImg1=main2_brand.preview;
+						$scope.name2=result.manual.name;
+						$scope.previewImg2=result.manual.preview;
+						$scope.brand_mix=result.brandmix;
+						for(var i=0;i<content.length;i++){
+	   	    	    			if(content[i].type1==3){
+	   	    	    				codeArray.push(content[i]);
+	   	    	    				$scope.codeArr=codeArray;
+	   	    	    			}else if(content[i].type1==4){
+	   	    	    				advertArray.push(content[i]);
+	   	    	    				$scope.advertArr=advertArray;
+	   	    	    			}
+	   	    	    		  }
+						$scope.$apply();
+					}
+				});
+			})
+			
+		</script>
+	</body>
+</html>
